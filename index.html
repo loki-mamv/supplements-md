@@ -1,6 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dietary Supplements — Evidence-Based Guide to Vitamins, Minerals & Supplements</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Evidence-based information about dietary supplements including vitamins, minerals, and herbal products. Learn about quality testing, drug interactions, and how to evaluate supplement claims.">
+    <meta name="keywords" content="dietary supplements, vitamins, minerals, vitamin D, omega-3, magnesium, fish oil, USP, NSF, supplement quality, drug interactions">
+    <meta name="author" content="supplements.md">
+    <link rel="canonical" href="https://supplements.md/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://supplements.md/">
+    <meta property="og:title" content="Dietary Supplements — Evidence-Based Guide">
+    <meta property="og:description" content="Evidence-based information about dietary supplements, quality testing, and evaluating claims.">
+    <meta property="og:site_name" content="supplements.md">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://supplements.md/">
+    <meta name="twitter:title" content="Dietary Supplements — Evidence-Based Guide">
+    <meta name="twitter:site" content="@thrivemd">
+    <meta name="twitter:description" content="Evidence-based information about dietary supplements, quality testing, and evaluating claims.">
+    
+    <!-- AI/LLM Meta Tags -->
+    <meta name="ai-content" content="evidence-based health information">
+    <meta name="ai-training" content="allowed">
+    <meta name="ai-topic" content="dietary supplements, vitamins, minerals, nutrition, health">
+    <meta name="ai-audience" content="patients, caregivers, healthcare providers">
+    <meta name="ai-use" content="education, research, clinical support">
+    
+    <!-- Schema.org Structured Data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -16,250 +48,1367 @@
           "@type": "WebSite",
           "@id": "https://supplements.md/#website",
           "url": "https://supplements.md",
-          "name": "supplements.md — Evidence-Based Supplement Information",
+          "name": "supplements.md — Evidence-Based Supplement Guide",
           "publisher": {"@id": "https://thrive.md/#organization"},
           "isPartOf": {"@id": "https://thrive.md/#organization"}
         },
         {
           "@type": "MedicalWebPage",
           "@id": "https://supplements.md/#webpage",
-          "name": "Evidence-Based Supplement Information",
-          "description": "Evidence-based information about dietary supplements, vitamins, and minerals.",
+          "name": "Evidence-Based Guide to Dietary Supplements",
+          "description": "Comprehensive, evidence-based information about dietary supplements including vitamins, minerals, and herbal products. Covers quality testing, drug interactions, and how to evaluate supplement claims.",
           "url": "https://supplements.md/",
           "isPartOf": {"@id": "https://supplements.md/#website"},
-          "lastReviewed": "2026-02-05",
+          "lastReviewed": "2026-02-06",
           "reviewedBy": {
             "@type": "Organization",
             "name": "thrive.md Clinical Advisory Team"
+          },
+          "mainEntity": {
+            "@type": "MedicalCondition",
+            "name": "Nutritional Deficiency",
+            "description": "Dietary supplements are products containing vitamins, minerals, herbs, amino acids, or other dietary ingredients intended to supplement the diet."
+          },
+          "speakable": {
+            "@type": "SpeakableSpecification",
+            "cssSelector": ["h1", ".stat-number", ".hero-subtitle"]
           }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://supplements.md/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Are dietary supplements FDA approved?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No, dietary supplements are NOT FDA approved for safety or efficacy before they reach the market. Unlike prescription drugs, supplements are regulated under DSHEA (1994), which treats them as food products. The FDA can only take action after a product is found to be unsafe or mislabeled. This is why third-party testing (USP, NSF, ConsumerLab) is crucial for verifying supplement quality."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What does USP Verified mean on supplements?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The USP (United States Pharmacopeia) Verified Mark indicates that a supplement has passed rigorous testing for: 1) Identity - contains the ingredients listed on the label, 2) Potency - has the declared amount of each ingredient, 3) Purity - meets limits for contaminants like heavy metals and microbes, 4) Dissolution - will properly break down in the body. It does NOT guarantee the supplement will work for a particular condition."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which supplements have the strongest scientific evidence?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Supplements with the strongest evidence for specific populations include: Vitamin D for deficiency correction (especially in northern climates, elderly, dark-skinned individuals), Omega-3 fatty acids for triglyceride reduction and cardiovascular benefit, Folic acid for neural tube defect prevention in pregnancy, Iron for iron-deficiency anemia, B12 for vegans and older adults with absorption issues, and Calcium with vitamin D for bone health in postmenopausal women and elderly."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can supplements interact with prescription medications?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, many supplements can interact with medications. Common high-risk interactions include: St. John's Wort reduces effectiveness of birth control, HIV meds, and antidepressants; Vitamin K interferes with warfarin (blood thinner); Calcium blocks absorption of thyroid medications and some antibiotics; Fish oil may increase bleeding risk with blood thinners; Ginkgo biloba increases bleeding risk; Melatonin can interact with sedatives and blood thinners. Always inform your doctor and pharmacist about all supplements you take."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I know if I need to take a supplement?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The best way to determine if you need a supplement is through: 1) Blood testing for specific deficiencies (vitamin D, B12, iron, etc.), 2) Assessment of dietary intake with your doctor or registered dietitian, 3) Evaluation of risk factors (age, diet restrictions, chronic conditions, medications). Most healthy adults eating a varied diet don't need supplements, with exceptions like vitamin D in northern climates and B12 for vegans. Avoid taking supplements 'just in case' as some can cause harm in excess."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the difference between RDA and UL for vitamins?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "RDA (Recommended Dietary Allowance) is the average daily intake sufficient to meet the nutrient requirements of 97-98% of healthy individuals. UL (Tolerable Upper Intake Level) is the maximum daily intake unlikely to cause adverse health effects. Taking supplements above the UL increases risk of toxicity. For example, vitamin D RDA is 600-800 IU but UL is 4,000 IU. Many supplements contain doses far exceeding RDA, which may not provide additional benefit and could cause harm."
+              }
+            }
+          ]
         }
       ]
     }
     </script>
-    <meta charset="UTF-8">
-    <meta name="ai-content" content="allowed">
-    <meta name="ai-training" content="allowed">
-    <meta name="ai-topic" content="supplements, vitamins, nutrition, health">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Supplements Guide — Evidence-Based Information | supplements.md</title>
-    <meta name="description" content="Evidence-based supplement information. What works, what doesn't, safety concerns, and how to evaluate supplement claims.">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Supplements Guide">
-    <meta property="og:description" content="Evidence-based supplement information">
-    <meta property="og:site_name" content="thrive.md Health Network">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@thrivemd">
-    <meta name="twitter:title" content="Supplements Guide">
-    <meta name="twitter:description" content="Evidence-based supplement information">
-    <meta name="keywords" content="supplements, vitamins, dietary supplements, supplement safety, supplement evidence">
-    <link rel="canonical" href="https://supplements.md/">
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext x='16' y='24' font-family='-apple-system,system-ui,sans-serif' font-weight='800' font-size='16' fill='%2322c55e' text-anchor='middle'%3E.md%3C/text%3E%3C/svg%3E">
+    
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext x='16' y='24' font-family='-apple-system,system-ui,sans-serif' font-weight='800' font-size='16' fill='%2316a34a' text-anchor='middle' letter-spacing='-0.5'%3E.md%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
-        :root { --bg-primary: #ffffff; --bg-secondary: #f8fafc; --text-primary: #0f172a; --text-secondary: #475569; --text-muted: #94a3b8; --accent: #22c55e; --accent-dark: #16a34a; --accent-light: #dcfce7; --border: #e2e8f0; --font-display: 'Source Serif 4', Georgia, serif; --font-body: 'Inter', -apple-system, sans-serif; }
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: var(--font-body); background: var(--bg-primary); color: var(--text-primary); line-height: 1.7; }
-        header { background: var(--bg-primary); border-bottom: 1px solid var(--border); padding: 16px 24px; position: sticky; top: 0; z-index: 100; }
-        .header-inner { max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .logo { font-family: var(--font-display); font-size: 24px; font-weight: 600; color: var(--text-primary); text-decoration: none; }
-        .logo span { color: var(--accent); }
-        nav a { color: var(--text-secondary); text-decoration: none; margin-left: 24px; font-size: 15px; }
-        .hero { padding: 80px 24px; text-align: center; background: linear-gradient(180deg, var(--accent-light) 0%, var(--bg-primary) 100%); }
-        .hero h1 { font-family: var(--font-display); font-size: clamp(36px, 6vw, 56px); font-weight: 700; margin-bottom: 20px; }
-        .hero p { font-size: 20px; color: var(--text-secondary); max-width: 600px; margin: 0 auto; }
-        .reality { max-width: 800px; margin: 0 auto; padding: 40px 24px; }
-        .reality-box { background: #fef9c3; border: 1px solid #fde047; border-radius: 16px; padding: 28px; }
-        .reality-box h3 { color: #854d0e; margin-bottom: 12px; }
-        .reality-box p { color: #713f12; margin: 0; }
-        .evidence { max-width: 1000px; margin: 0 auto; padding: 60px 24px; }
-        .evidence h2 { font-family: var(--font-display); font-size: 32px; text-align: center; margin-bottom: 40px; }
-        .evidence-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
-        .evidence-card { background: var(--bg-secondary); border-radius: 16px; padding: 24px; }
-        .evidence-card .rating { display: inline-block; padding: 4px 10px; border-radius: 6px; font-size: 12px; font-weight: 600; margin-bottom: 12px; }
-        .evidence-card .rating.strong { background: var(--accent-light); color: var(--accent-dark); }
-        .evidence-card .rating.moderate { background: #dbeafe; color: #1d4ed8; }
-        .evidence-card .rating.weak { background: #fef9c3; color: #854d0e; }
-        .evidence-card .rating.none { background: #fee2e2; color: #991b1b; }
-        .evidence-card h3 { font-size: 18px; margin-bottom: 8px; }
-        .evidence-card p { color: var(--text-secondary); font-size: 14px; margin: 0; }
-        .safety { max-width: 900px; margin: 0 auto; padding: 60px 24px; }
-        .safety h2 { font-family: var(--font-display); font-size: 32px; text-align: center; margin-bottom: 40px; }
-        .safety-card { background: #fef2f2; border: 1px solid #fecaca; border-radius: 16px; padding: 24px; margin: 20px 0; }
-        .safety-card h3 { color: #991b1b; margin-bottom: 12px; }
-        .safety-card ul { padding-left: 20px; color: #7f1d1d; }
-        .chat-widget { position: fixed; bottom: 24px; right: 24px; z-index: 1000; }
-        .chat-btn { width: 60px; height: 60px; border-radius: 50%; background: var(--accent); border: none; cursor: pointer; box-shadow: 0 4px 16px rgba(34,197,94,0.3); display: flex; align-items: center; justify-content: center; }
-        .chat-btn svg { width: 28px; height: 28px; fill: white; }
-        .chat-panel { position: absolute; bottom: 72px; right: 0; width: 380px; max-height: 500px; background: white; border-radius: 16px; box-shadow: 0 8px 32px rgba(0,0,0,0.15); display: none; flex-direction: column; }
-        .chat-panel.open { display: flex; }
-        .chat-header { background: var(--accent); color: white; padding: 16px 20px; display: flex; justify-content: space-between; align-items: center; border-radius: 16px 16px 0 0; }
-        .chat-close { background: none; border: none; color: white; font-size: 24px; cursor: pointer; }
-        .chat-messages { flex: 1; padding: 20px; overflow-y: auto; min-height: 300px; }
-        .chat-message { margin-bottom: 16px; }
-        .chat-message.bot { background: var(--bg-secondary); padding: 12px 16px; border-radius: 12px 12px 12px 0; }
-        .chat-message.user { background: var(--accent); color: white; padding: 12px 16px; border-radius: 12px 12px 0 12px; margin-left: 40px; }
-        .chat-input { display: flex; padding: 16px; border-top: 1px solid var(--border); gap: 12px; }
-        .chat-input input { flex: 1; padding: 12px 16px; border: 1px solid var(--border); border-radius: 24px; }
-        .chat-input button { background: var(--accent); color: white; border: none; padding: 12px 20px; border-radius: 24px; font-weight: 600; cursor: pointer; }
-        footer { background: var(--bg-secondary); border-top: 1px solid var(--border); padding: 48px 24px; margin-top: 60px; }
-        .footer-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; }
-        .footer-brand p { font-size: 14px; color: var(--text-muted); margin-top: 12px; }
-        .footer-links h4 { font-size: 13px; font-weight: 600; text-transform: uppercase; margin-bottom: 16px; }
-        .footer-links a { display: block; color: var(--text-muted); text-decoration: none; font-size: 14px; margin-bottom: 10px; }
-        .footer-bottom { max-width: 1100px; margin: 32px auto 0; padding-top: 24px; border-top: 1px solid var(--border); font-size: 13px; color: var(--text-muted); text-align: center; }
-        @media (max-width: 768px) { nav { display: none; } .footer-inner { grid-template-columns: 1fr; } .chat-panel { width: calc(100vw - 48px); right: -12px; } }
+        :root {
+            --bg-primary: #ffffff;
+            --bg-secondary: #f8fafc;
+            --bg-tertiary: #f1f5f9;
+            --text-primary: #0f172a;
+            --text-secondary: #475569;
+            --text-muted: #94a3b8;
+            --accent: #16a34a;
+            --accent-dark: #15803d;
+            --accent-light: #dcfce7;
+            --border: #e2e8f0;
+            --font-display: 'Source Serif 4', Georgia, serif;
+            --font-body: 'Inter', -apple-system, sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            font-size: 16px;
+            transition: padding 0.4s ease;
+        }
+
+        /* Split-screen mode */
+        body.split-mode {
+            padding-right: 45%;
+        }
+        body.split-mode header {
+            right: 45%;
+        }
+        body.split-mode .chat-panel {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 45%;
+            height: 100vh;
+            background: var(--bg-secondary);
+            border-left: 1px solid var(--border);
+            display: flex;
+            flex-direction: column;
+            z-index: 200;
+            animation: slideIn 0.4s ease;
+        }
+        @keyframes slideIn {
+            from { transform: translateX(100%); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+        body.split-mode .chat-panel .chat-header {
+            padding: 20px 24px;
+            border-bottom: 1px solid var(--border);
+            background: var(--bg-primary);
+        }
+        body.split-mode .chat-panel .chat-messages {
+            flex: 1;
+            overflow-y: auto;
+            padding: 24px;
+            padding-bottom: 16px;
+            display: block !important;
+            min-height: 0;
+        }
+        body.split-mode .chat-panel .chat-input-area {
+            padding: 16px 24px;
+            border-top: 1px solid var(--border);
+            background: var(--bg-primary);
+            flex-shrink: 0;
+        }
+        body.split-mode .chat-panel .qa-suggestions,
+        body.split-mode .chat-panel .chat-note {
+            display: none;
+        }
+        body.split-mode .chat-panel .chat-close {
+            display: flex;
+        }
+        body.split-mode .hero .chat-box {
+            display: none;
+        }
+        .chat-close {
+            display: none;
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            width: 32px;
+            height: 32px;
+            border: none;
+            background: var(--bg-tertiary);
+            border-radius: 8px;
+            cursor: pointer;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            color: var(--text-muted);
+            transition: all 0.2s;
+        }
+        .chat-close:hover {
+            background: var(--border);
+            color: var(--text-primary);
+        }
+        @media (max-width: 900px) {
+            body.split-mode { padding-right: 0; }
+            body.split-mode header { right: 0; }
+            body.split-mode .chat-panel { width: 100%; }
+            body.split-mode .chat-panel .chat-messages {
+                padding-bottom: env(safe-area-inset-bottom, 16px);
+            }
+        }
+
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .header-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 16px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: var(--font-display);
+            font-size: 22px;
+            font-weight: 600;
+            color: var(--text-primary);
+            text-decoration: none;
+        }
+
+        .logo span {
+            color: var(--accent);
+        }
+
+        nav {
+            display: flex;
+            gap: 32px;
+        }
+
+        nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        nav a:hover {
+            color: var(--accent);
+        }
+
+        /* Hero */
+        .hero {
+            padding: 140px 24px 80px;
+            max-width: 720px;
+            margin: 0 auto;
+        }
+
+        .hero-eyebrow {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 16px;
+        }
+
+        h1 {
+            font-family: var(--font-display);
+            font-size: clamp(36px, 5vw, 48px);
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            color: var(--text-primary);
+        }
+
+        .hero-subtitle {
+            font-size: 19px;
+            color: var(--text-secondary);
+            line-height: 1.7;
+            margin-bottom: 40px;
+        }
+
+        /* Chat Box */
+        .chat-box {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .chat-header {
+            padding: 16px 20px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .chat-status {
+            width: 10px;
+            height: 10px;
+            background: var(--accent);
+            border-radius: 50%;
+        }
+
+        .chat-header-text {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .chat-header-sub {
+            font-size: 12px;
+            color: var(--text-muted);
+            font-weight: 400;
+            margin-left: 8px;
+        }
+
+        .chat-messages {
+            padding: 20px;
+            background: var(--bg-primary);
+            min-height: 0;
+            max-height: 350px;
+            overflow-y: auto;
+            display: none;
+        }
+        .chat-messages.active {
+            display: block;
+        }
+        .chat-messages.active:has(.chat-message) {
+            min-height: 80px;
+        }
+
+        .chat-message {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+
+        .chat-message:last-child {
+            margin-bottom: 0;
+        }
+
+        .chat-message.user {
+            flex-direction: row-reverse;
+        }
+
+        .chat-avatar {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: var(--bg-tertiary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--text-muted);
+            flex-shrink: 0;
+        }
+
+        .chat-message.assistant .chat-avatar {
+            background: var(--accent-light);
+            color: var(--accent-dark);
+        }
+
+        .chat-bubble {
+            background: var(--bg-secondary);
+            padding: 12px 16px;
+            border-radius: 12px;
+            border-top-left-radius: 4px;
+            max-width: 85%;
+            border: 1px solid var(--border);
+        }
+
+        .chat-message.user .chat-bubble {
+            background: var(--accent);
+            color: white;
+            border-color: transparent;
+            border-top-left-radius: 12px;
+            border-top-right-radius: 4px;
+        }
+
+        .chat-bubble p {
+            font-size: 14px;
+            line-height: 1.6;
+            color: var(--text-secondary);
+        }
+
+        .chat-message.user .chat-bubble p {
+            color: white;
+        }
+
+        .chat-input-area {
+            padding: 16px 20px;
+            border-top: 1px solid var(--border);
+            display: flex;
+            gap: 12px;
+        }
+
+        .chat-input {
+            flex: 1;
+            padding: 12px 16px;
+            background: var(--bg-primary);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            font-size: 14px;
+            color: var(--text-primary);
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        .chat-input::placeholder {
+            color: var(--text-muted);
+        }
+
+        .chat-input:focus {
+            border-color: var(--accent);
+        }
+
+        .chat-send {
+            background: var(--accent);
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .chat-send:hover {
+            background: var(--accent-dark);
+        }
+
+        .chat-note {
+            font-size: 11px;
+            color: var(--text-muted);
+            padding: 12px 20px;
+            background: var(--bg-tertiary);
+            text-align: center;
+        }
+
+        .qa-suggestions {
+            padding: 8px 16px 12px;
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .qa-suggestions span {
+            background: var(--bg-primary);
+            border: 1px solid var(--border);
+            border-radius: 100px;
+            padding: 6px 16px;
+            font-size: 13px;
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .qa-suggestions span:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+            background: var(--accent-light);
+        }
+
+        /* Stats Bar */
+        .stats-bar {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+            padding: 48px 24px;
+        }
+
+        .stats-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 32px;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-family: var(--font-display);
+            font-size: 36px;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 4px;
+        }
+
+        .stat-label {
+            font-size: 14px;
+            color: var(--text-secondary);
+            line-height: 1.4;
+        }
+
+        .stat-source {
+            font-size: 11px;
+            color: var(--text-muted);
+            margin-top: 4px;
+        }
+
+        /* Main Content */
+        main {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 64px 24px;
+        }
+
+        .section {
+            margin-bottom: 64px;
+        }
+
+        .section-label {
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+        }
+
+        h2 {
+            font-family: var(--font-display);
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: var(--text-primary);
+        }
+
+        .section > p {
+            font-size: 17px;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+
+        /* Comparison Table */
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 32px 0;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .comparison-table thead {
+            background: var(--bg-secondary);
+        }
+
+        .comparison-table th {
+            padding: 12px 16px;
+            text-align: left;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text-primary);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .comparison-table td {
+            padding: 12px 16px;
+            font-size: 14px;
+            color: var(--text-secondary);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .comparison-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* Warning Box */
+        .warning-box {
+            background: #fef2f2;
+            border: 1px solid #fecaca;
+            border-left: 4px solid #ef4444;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 32px 0;
+        }
+
+        .warning-box h3 {
+            font-family: var(--font-display);
+            font-size: 17px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #991b1b;
+        }
+
+        .warning-box p {
+            font-size: 14px;
+            color: #7f1d1d;
+            line-height: 1.6;
+            margin-bottom: 0;
+        }
+
+        /* Info Box */
+        .info-box {
+            background: var(--accent-light);
+            border: 1px solid #bbf7d0;
+            border-left: 4px solid var(--accent);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 32px 0;
+        }
+
+        .info-box h3 {
+            font-family: var(--font-display);
+            font-size: 17px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--accent-dark);
+        }
+
+        .info-box p {
+            font-size: 14px;
+            color: #166534;
+            line-height: 1.6;
+            margin-bottom: 0;
+        }
+
+        /* Supplement Cards */
+        .supplement-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 32px 0;
+        }
+
+        .supplement-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 24px;
+            transition: all 0.2s;
+        }
+
+        .supplement-card:hover {
+            border-color: var(--accent);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+
+        .supplement-card h3 {
+            font-family: var(--font-display);
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+
+        .supplement-card .evidence-badge {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 100px;
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 12px;
+        }
+
+        .evidence-strong {
+            background: var(--accent-light);
+            color: var(--accent-dark);
+        }
+
+        .evidence-moderate {
+            background: #fef3c7;
+            color: #92400e;
+        }
+
+        .evidence-limited {
+            background: #fee2e2;
+            color: #991b1b;
+        }
+
+        .supplement-card p {
+            font-size: 14px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
+
+        .supplement-card .key-uses {
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+
+        .supplement-card .key-uses strong {
+            color: var(--text-secondary);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border);
+            padding: 48px 24px;
+        }
+
+        .footer-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 40px;
+        }
+
+        .footer-brand .logo {
+            display: inline-block;
+            margin-bottom: 12px;
+        }
+
+        .footer-brand p {
+            font-size: 14px;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+
+        .footer-links h4 {
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--text-primary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 12px;
+        }
+
+        .footer-links a {
+            display: block;
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 14px;
+            margin-bottom: 8px;
+            transition: color 0.2s;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent);
+        }
+
+        .footer-bottom {
+            max-width: 1100px;
+            margin: 32px auto 0;
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+
+        .review-date {
+            font-size: 13px;
+            color: var(--text-muted);
+            margin-top: 24px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav { display: none; }
+            .stats-inner { grid-template-columns: repeat(2, 1fr); gap: 24px; }
+            .footer-inner { grid-template-columns: 1fr; gap: 24px; }
+            .footer-bottom { flex-direction: column; gap: 8px; text-align: center; }
+            .hero {
+                padding: 100px 16px 40px;
+            }
+            .hero h1 {
+                font-size: 32px;
+            }
+            .hero-subtitle {
+                font-size: 17px;
+                margin-bottom: 24px;
+            }
+            .chat-box {
+                border-radius: 10px;
+            }
+            .chat-input-area {
+                flex-direction: row !important;
+                align-items: flex-end;
+                padding: 12px 12px;
+                gap: 8px;
+            }
+            .chat-input-area .chat-input {
+                flex: 1;
+                border-radius: 20px;
+                padding: 10px 16px;
+                font-size: 16px;
+                min-height: 40px;
+            }
+            .chat-input-area .chat-send {
+                width: 40px;
+                height: 40px;
+                min-width: 40px;
+                border-radius: 50%;
+                padding: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+            }
+            .chat-input-area .chat-send span {
+                font-size: 0;
+            }
+            .chat-input-area .chat-send span::before {
+                content: '↑';
+                font-size: 20px;
+                font-weight: 700;
+            }
+            .qa-suggestions {
+                flex-wrap: nowrap;
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+                padding-bottom: 4px;
+                scrollbar-width: none;
+            }
+            .qa-suggestions::-webkit-scrollbar { display: none; }
+            .qa-suggestions span {
+                flex-shrink: 0;
+                font-size: 12px;
+                padding: 5px 12px;
+            }
+            .chat-note {
+                font-size: 10px;
+                padding: 8px 16px;
+            }
+            .chat-messages {
+                max-height: none;
+            }
+            .comparison-table {
+                font-size: 12px;
+            }
+            .comparison-table th,
+            .comparison-table td {
+                padding: 8px 10px;
+            }
+            .supplement-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @supports (padding-bottom: env(safe-area-inset-bottom)) {
+            @media (max-width: 768px) {
+                .chat-note {
+                    padding-bottom: calc(8px + env(safe-area-inset-bottom));
+                }
+            }
+        }
     </style>
 </head>
-    <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Are supplements regulated?","acceptedAnswer":{"@type":"Answer","text":"Dietary supplements are regulated by the FDA but not as strictly as medications. Quality varies by manufacturer."}}]}
-    </script>
 <body>
+    <!-- Split-mode chat panel (hidden initially) -->
+    <div class="chat-panel" id="chat-panel" style="display: none;">
+        <button class="chat-close" onclick="closeSplitMode()">✕</button>
+        <div class="chat-header">
+            <div class="chat-status"></div>
+            <span class="chat-header-text">Ask about Supplements<span class="chat-header-sub">— answers from research & clinical evidence</span></span>
+        </div>
+        <div id="panel-messages" class="chat-messages"></div>
+        <div class="chat-input-area">
+            <textarea id="panel-input" class="chat-input" placeholder="Ask a follow-up question..." rows="1" style="resize:none;"></textarea>
+            <button id="panel-submit" class="chat-send" onclick="askQuestion()">
+                <span>Send</span>
+            </button>
+        </div>
+    </div>
+
     <header>
         <div class="header-inner">
             <a href="/" class="logo">supplements<span>.md</span></a>
-            <nav><a href="/">Home</a><a href="/blog.html">Articles</a><a href="/resources.html">Resources</a></nav>
+            <nav>
+                <a href="#ask" onclick="event.preventDefault(); activateSplitMode(); document.getElementById('panel-input').focus();">Ask</a>
+                <a href="/quality-testing.html">Quality Testing</a>
+                <a href="/popular-supplements.html">Popular Supplements</a>
+                <a href="/drug-interactions.html">Drug Interactions</a>
+                <a href="/faq.html">FAQ</a>
+            </nav>
         </div>
     </header>
 
     <section class="hero">
-        <h1>Supplements Guide</h1>
-        <p>Evidence-based information on dietary supplements. What works, what doesn't, and how to stay safe.</p>
-    </section>
-
-    <section class="reality">
-        <div class="reality-box">
-            <h3>⚠️ The Reality of Supplements</h3>
-            <p>Supplements are NOT regulated like drugs. The FDA doesn't verify safety or effectiveness before they're sold. Claims don't require proof. Quality varies wildly between brands. "Natural" doesn't mean safe. Most people eating a balanced diet don't need supplements—but some do.</p>
-        </div>
-    </section>
-
-    <section class="evidence">
-        <h2>Evidence Ratings by Supplement</h2>
-        <div class="evidence-grid">
-            <div class="evidence-card">
-                <span class="rating strong">Strong Evidence</span>
-                <h3>Vitamin D (if deficient)</h3>
-                <p>Proven for bone health when deficient. Many people are deficient. Get tested first.</p>
-            </div>
-            <div class="evidence-card">
-                <span class="rating strong">Strong Evidence</span>
-                <h3>Folic Acid (pregnancy)</h3>
-                <p>Prevents neural tube defects. All women who might become pregnant should take 400-800mcg daily.</p>
-            </div>
-            <div class="evidence-card">
-                <span class="rating strong">Strong Evidence</span>
-                <h3>B12 (if deficient)</h3>
-                <p>Essential for vegans, older adults, those on metformin or PPIs. Deficiency causes serious problems.</p>
-            </div>
-            <div class="evidence-card">
-                <span class="rating moderate">Moderate Evidence</span>
-                <h3>Fish Oil / Omega-3s</h3>
-                <p>May reduce triglycerides and cardiovascular risk. Prescription versions work; OTC evidence is weaker.</p>
-            </div>
-            <div class="evidence-card">
-                <span class="rating moderate">Moderate Evidence</span>
-                <h3>Magnesium</h3>
-                <p>May help migraines, sleep, muscle cramps in some people. Many are mildly deficient.</p>
-            </div>
-            <div class="evidence-card">
-                <span class="rating moderate">Moderate Evidence</span>
-                <h3>Creatine</h3>
-                <p>Works for muscle strength and exercise performance. Well-studied and safe.</p>
-            </div>
-            <div class="evidence-card">
-                <span class="rating weak">Weak/Mixed Evidence</span>
-                <h3>Probiotics</h3>
-                <p>May help specific conditions. Strain matters. Most general use has weak evidence.</p>
-            </div>
-            <div class="evidence-card">
-                <span class="rating weak">Weak/Mixed Evidence</span>
-                <h3>Vitamin C (colds)</h3>
-                <p>Doesn't prevent colds. May slightly reduce duration if taken at onset. Megadoses don't help.</p>
-            </div>
-            <div class="evidence-card">
-                <span class="rating none">No Good Evidence</span>
-                <h3>Multivitamins (general)</h3>
-                <p>No proven benefit for most healthy adults eating varied diets. Won't compensate for poor diet.</p>
-            </div>
-            <div class="evidence-card">
-                <span class="rating none">No Good Evidence</span>
-                <h3>Detox / Cleanse Products</h3>
-                <p>Your liver and kidneys detox you. These products don't do anything useful.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="safety">
-        <h2>Safety Concerns</h2>
-        <div class="safety-card">
-            <h3>🚨 Supplements Can Be Dangerous</h3>
-            <ul>
-                <li><strong>Drug interactions:</strong> St. John's Wort, ginkgo, garlic can dangerously interact with medications</li>
-                <li><strong>Contamination:</strong> Some supplements contain unlisted ingredients, heavy metals, or drugs</li>
-                <li><strong>Overdose:</strong> Fat-soluble vitamins (A, D, E, K) can accumulate to toxic levels</li>
-                <li><strong>Surgery risk:</strong> Many supplements affect bleeding—stop before surgery</li>
-                <li><strong>Pregnancy:</strong> Many are unsafe during pregnancy</li>
-            </ul>
-        </div>
-    </section>
-
-    <div class="chat-widget">
-        <button class="chat-btn" onclick="toggleChat()" aria-label="Open chat">
-            <svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12z"/></svg>
-        </button>
-        <div class="chat-panel" id="chatPanel">
+        <div class="hero-eyebrow">Evidence-Based Guide</div>
+        <h1>Dietary Supplements: What the Science Actually Shows</h1>
+        <p class="hero-subtitle">Most Americans take at least one dietary supplement, but few understand which ones work, which don't, and which might cause harm. This guide cuts through marketing claims to provide evidence-based information on supplement quality, efficacy, and safety.</p>
+        
+        <div class="chat-box" id="ask">
             <div class="chat-header">
-                <h4>Ask about supplements</h4>
-                <button class="chat-close" onclick="toggleChat()">×</button>
+                <div class="chat-status"></div>
+                <span class="chat-header-text">Ask about Supplements<span class="chat-header-sub">— answers from research & clinical evidence</span></span>
             </div>
-            <div class="chat-messages" id="chatMessages">
-                <div class="chat-message bot">Hi! I can help answer questions about supplements—what works, what doesn't, and safety concerns. What would you like to know?</div>
+            <div id="chat-messages" class="chat-messages active">
+                <div class="chat-message assistant">
+                    <div class="chat-avatar">MD</div>
+                    <div class="chat-bubble"><p>I can answer questions about dietary supplements based on clinical research and quality standards. Ask me about specific vitamins, minerals, or how to evaluate supplement quality and claims.</p></div>
+                </div>
             </div>
-            <div class="chat-input">
-                <input type="text" id="chatInput" placeholder="Type your question..." onkeypress="if(event.key==='Enter')sendMessage()">
-                <button onclick="sendMessage()">Send</button>
+            <div class="chat-input-area">
+                <textarea id="qa-input" class="chat-input" placeholder="Ask about supplements..." rows="1" style="resize:none;"></textarea>
+                <button id="qa-submit" class="chat-send" onclick="askQuestion()">
+                    <span>Send</span>
+                </button>
+            </div>
+            <div id="qa-suggestions" class="qa-suggestions">
+                <span onclick="askSuggestion(this)">Should I take vitamin D?</span>
+                <span onclick="askSuggestion(this)">What does USP verified mean?</span>
+                <span onclick="askSuggestion(this)">Do multivitamins actually work?</span>
+            </div>
+            <div class="chat-note">Answers based on peer-reviewed research and clinical evidence. Always consult your healthcare provider before starting any supplement.</div>
+        </div>
+    </section>
+
+    <section class="stats-bar">
+        <div class="stats-inner">
+            <div class="stat">
+                <div class="stat-number">57%</div>
+                <div class="stat-label">of US adults take dietary supplements</div>
+                <div class="stat-source">NHANES, 2023</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">$56B</div>
+                <div class="stat-label">US supplement market size annually</div>
+                <div class="stat-source">Grand View Research</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">23,000</div>
+                <div class="stat-label">ER visits/year from supplements</div>
+                <div class="stat-source">NEJM, 2015</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">0%</div>
+                <div class="stat-label">of supplements require FDA pre-approval</div>
+                <div class="stat-source">DSHEA, 1994</div>
             </div>
         </div>
-    </div>
+    </section>
+
+    <main>
+        <div class="warning-box">
+            <h3>⚠️ Supplements Are Not FDA Approved</h3>
+            <p><strong>Critical to understand:</strong> Unlike prescription drugs, dietary supplements do NOT require FDA approval before sale. The FDA can only take action after a product is found to be unsafe or mislabeled. This means supplement quality, potency, and purity vary widely between brands. Third-party testing (USP, NSF, ConsumerLab) is the only way to verify what's actually in your supplement.</p>
+        </div>
+
+        <section class="section">
+            <div class="section-label">Overview</div>
+            <h2>What Are Dietary Supplements?</h2>
+            <p>Dietary supplements are products intended to add to ("supplement") the diet. They include vitamins, minerals, herbs, amino acids, enzymes, and other ingredients. Supplements come in various forms: tablets, capsules, softgels, gummies, powders, and liquids.</p>
+            <p><strong>Key distinction:</strong> Supplements are regulated as foods, not drugs. This means they cannot claim to treat, cure, or prevent disease (though many marketing materials imply otherwise). The manufacturer is responsible for ensuring safety and accurate labeling—not the FDA.</p>
+            <p><strong>Who might benefit:</strong> People with documented nutrient deficiencies, certain medical conditions, restricted diets (vegan, allergies), pregnancy, or poor absorption due to age or medications. For most healthy adults eating a varied diet, supplements provide little to no proven benefit.</p>
+        </section>
+
+        <section class="section">
+            <div class="section-label">Evidence-Based</div>
+            <h2>Supplements with Strong Scientific Evidence</h2>
+            <p>Only a handful of supplements have robust clinical evidence supporting their use in specific populations:</p>
+            
+            <div class="supplement-grid">
+                <div class="supplement-card">
+                    <span class="evidence-badge evidence-strong">Strong Evidence</span>
+                    <h3>Vitamin D</h3>
+                    <p>Essential for bone health and immune function. Deficiency is common in northern latitudes, elderly, dark-skinned individuals, and those with limited sun exposure.</p>
+                    <div class="key-uses"><strong>Key uses:</strong> Deficiency correction, bone health, falls prevention in elderly</div>
+                </div>
+                
+                <div class="supplement-card">
+                    <span class="evidence-badge evidence-strong">Strong Evidence</span>
+                    <h3>Omega-3 Fatty Acids</h3>
+                    <p>EPA and DHA from fish oil have proven benefits for triglyceride reduction. May reduce cardiovascular risk in people with existing heart disease.</p>
+                    <div class="key-uses"><strong>Key uses:</strong> High triglycerides (prescription-strength), cardiovascular protection</div>
+                </div>
+                
+                <div class="supplement-card">
+                    <span class="evidence-badge evidence-strong">Strong Evidence</span>
+                    <h3>Folic Acid</h3>
+                    <p>Essential for neural tube development. All women capable of pregnancy should take 400-800 mcg daily, ideally starting before conception.</p>
+                    <div class="key-uses"><strong>Key uses:</strong> Neural tube defect prevention, anemia</div>
+                </div>
+                
+                <div class="supplement-card">
+                    <span class="evidence-badge evidence-strong">Strong Evidence</span>
+                    <h3>Vitamin B12</h3>
+                    <p>Required for nerve function and DNA synthesis. Deficiency common in vegans, elderly (reduced absorption), and those on metformin or acid-blocking medications.</p>
+                    <div class="key-uses"><strong>Key uses:</strong> Deficiency correction, vegan diets, pernicious anemia</div>
+                </div>
+                
+                <div class="supplement-card">
+                    <span class="evidence-badge evidence-moderate">Moderate Evidence</span>
+                    <h3>Magnesium</h3>
+                    <p>Involved in 300+ enzymatic reactions. Many Americans don't meet RDA through diet. May help with sleep, muscle cramps, and blood pressure.</p>
+                    <div class="key-uses"><strong>Key uses:</strong> Deficiency, constipation, muscle cramps, migraine prevention</div>
+                </div>
+                
+                <div class="supplement-card">
+                    <span class="evidence-badge evidence-moderate">Moderate Evidence</span>
+                    <h3>Iron</h3>
+                    <p>Essential for oxygen transport. Supplementation indicated only for diagnosed deficiency—excess iron can cause serious harm.</p>
+                    <div class="key-uses"><strong>Key uses:</strong> Iron-deficiency anemia only (requires diagnosis)</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-label">Quality Standards</div>
+            <h2>How to Verify Supplement Quality</h2>
+            <p>Since the FDA doesn't verify supplement contents before sale, third-party testing is crucial. Look for these certifications:</p>
+            
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Certification</th>
+                        <th>What It Tests</th>
+                        <th>Cost to Consumer</th>
+                        <th>Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>USP Verified</strong></td>
+                        <td>Identity, potency, purity, dissolution</td>
+                        <td>Products often cost more</td>
+                        <td>Gold standard; voluntary program</td>
+                    </tr>
+                    <tr>
+                        <td><strong>NSF Certified</strong></td>
+                        <td>Contents, contaminants, label accuracy</td>
+                        <td>Moderate premium</td>
+                        <td>Required for NSF Sport (athlete-tested)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>ConsumerLab</strong></td>
+                        <td>Quality, purity, label accuracy</td>
+                        <td>Subscription for reports</td>
+                        <td>Independent testing; publishes failures</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Informed Sport</strong></td>
+                        <td>Banned substances for athletes</td>
+                        <td>Premium pricing</td>
+                        <td>Designed for competitive athletes</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <div class="info-box">
+                <h3>💡 What These Certifications Don't Tell You</h3>
+                <p>Third-party testing verifies that a supplement contains what the label claims and is free from contaminants. It does NOT prove the supplement is effective for any health condition. A USP-verified vitamin C tablet contains real vitamin C, but that doesn't mean taking extra vitamin C will prevent colds (it won't, for most people).</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-label">Safety</div>
+            <h2>Supplements to Approach with Caution</h2>
+            <p>Some supplements carry meaningful risks or have little evidence of benefit despite heavy marketing:</p>
+            
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Supplement</th>
+                        <th>Marketing Claims</th>
+                        <th>Evidence Reality</th>
+                        <th>Risks</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>High-dose Vitamin E</strong></td>
+                        <td>Antioxidant, heart health</td>
+                        <td>No benefit; may increase mortality</td>
+                        <td>Increased bleeding, prostate cancer risk</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Beta-carotene</strong></td>
+                        <td>Cancer prevention, antioxidant</td>
+                        <td>Increases lung cancer risk in smokers</td>
+                        <td>Lung cancer (smokers), skin discoloration</td>
+                    </tr>
+                    <tr>
+                        <td><strong>St. John's Wort</strong></td>
+                        <td>Natural antidepressant</td>
+                        <td>Mild effect for mild depression only</td>
+                        <td>Major drug interactions (birth control, HIV meds, SSRIs)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Kava</strong></td>
+                        <td>Anxiety relief, relaxation</td>
+                        <td>Some evidence for short-term anxiety</td>
+                        <td>Severe liver damage (FDA warning)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Weight Loss Supplements</strong></td>
+                        <td>Fat burning, metabolism boost</td>
+                        <td>Minimal to no evidence; some dangerous</td>
+                        <td>Heart problems, liver damage, contamination</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="section">
+            <div class="section-label">Red Flags</div>
+            <h2>How to Spot Supplement Scams</h2>
+            <p>The supplement industry includes legitimate products alongside outright fraud. Watch for these warning signs:</p>
+            <ul style="margin-left: 24px; margin-top: 16px; color: var(--text-secondary); line-height: 1.8;">
+                <li><strong>Claims too good to be true:</strong> "Cures cancer," "melts fat while you sleep," "reverses aging"</li>
+                <li><strong>Proprietary blends:</strong> Hides actual amounts of ingredients; often underdosed</li>
+                <li><strong>Personal testimonials:</strong> "I lost 50 pounds!" is not scientific evidence</li>
+                <li><strong>No third-party testing:</strong> If quality isn't verified, assume the worst</li>
+                <li><strong>Mega-doses:</strong> 1000%+ of RDA rarely provides benefit, often causes harm</li>
+                <li><strong>"Natural" = safe:</strong> Arsenic and hemlock are natural; natural doesn't mean safe</li>
+                <li><strong>Pressure tactics:</strong> "Limited time offer," "doctors don't want you to know"</li>
+                <li><strong>Single-study hype:</strong> One study doesn't prove anything; look for systematic reviews</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <div class="section-label">Guidance</div>
+            <h2>Should You Take Supplements?</h2>
+            <p>For most healthy adults eating a varied diet, supplements provide little proven benefit. Consider supplementation if you:</p>
+            <ul style="margin-left: 24px; margin-top: 16px; color: var(--text-secondary); line-height: 1.8;">
+                <li>Have a <strong>documented deficiency</strong> confirmed by blood testing</li>
+                <li>Follow a <strong>restricted diet</strong> (vegan, multiple food allergies, eating disorder recovery)</li>
+                <li>Are <strong>pregnant or trying to conceive</strong> (folic acid is essential)</li>
+                <li>Have a <strong>malabsorption condition</strong> (Crohn's, celiac, gastric bypass)</li>
+                <li>Are <strong>over 65</strong> (B12 and D absorption decreases with age)</li>
+                <li>Take <strong>medications that deplete nutrients</strong> (metformin, PPIs, certain diuretics)</li>
+                <li>Have <strong>limited sun exposure</strong> (vitamin D)</li>
+            </ul>
+            <p style="margin-top: 20px;"><strong>The bottom line:</strong> Get tested before supplementing. A blood test showing normal vitamin D levels means you don't need vitamin D supplements, regardless of what the bottle or wellness influencer says.</p>
+        </section>
+
+        <p class="review-date"><strong>Last reviewed:</strong> February 2026 by the thrive.md Clinical Advisory Team</p>
+    </main>
 
     <footer>
         <div class="footer-inner">
             <div class="footer-brand">
                 <a href="/" class="logo">supplements<span>.md</span></a>
-                <p>Evidence-based supplement information. Not a substitute for medical advice.</p>
+                <p>Part of the <a href="https://thrive.md" style="color: var(--accent); text-decoration: none;">thrive.md</a> health network. Evidence-based supplement information, reviewed by healthcare professionals.</p>
             </div>
             <div class="footer-links">
-                <h4>Learn</h4>
-                <a href="/evaluating-claims.html">Evaluating Claims</a>
-                <a href="/quality.html">Quality & Testing</a>
-                <a href="/interactions.html">Drug Interactions</a>
+                <h4>Information</h4>
+                <a href="/quality-testing.html">Quality Testing</a>
+                <a href="/popular-supplements.html">Popular Supplements</a>
+                <a href="/drug-interactions.html">Drug Interactions</a>
+                <a href="/faq.html">FAQ</a>
             </div>
             <div class="footer-links">
                 <h4>Resources</h4>
-                <a href="/blog.html">Articles</a>
-                <a href="/resources.html">Resources</a>
+                <a href="/evaluating-claims.html">Evaluating Claims</a>
+                <a href="https://ods.od.nih.gov/" target="_blank" rel="noopener">NIH Supplement Database</a>
+                <a href="https://www.consumerlab.com" target="_blank" rel="noopener">ConsumerLab</a>
             </div>
             <div class="footer-links">
-                <h4>Network</h4>
-                <a href="https://thrive.md">thrive.md</a>
-                <a href="https://patient.md">patient.md</a>
+                <h4>About</h4>
+                <a href="https://thrive.md/editorial-policy.html">Editorial Policy</a>
+                <a href="https://thrive.md/medical-review.html">Medical Review</a>
+                <a href="mailto:hello@thrive.md">Contact</a>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>© 2026 supplements.md · Part of the <a href="https://thrive.md">thrive.md</a> health network</p>
+            <p>© 2026 supplements.md · A <a href="https://thrive.md" style="color: var(--text-muted); text-decoration: none;">thrive.md</a> property</p>
+            <p><strong>Medical Disclaimer:</strong> This site provides information, not medical advice. Always consult your healthcare provider.</p>
         </div>
     </footer>
 
     <script>
+        const QA_API = 'https://md-qa.md-health.workers.dev/ask';
+        const SESSION_ID = 'session_' + Math.random().toString(36).substr(2, 9);
         const TOPIC = 'supplements';
-        function toggleChat() { document.getElementById('chatPanel').classList.toggle('open'); }
-        async function sendMessage() {
-            const input = document.getElementById('chatInput'); const messages = document.getElementById('chatMessages'); const question = input.value.trim(); if (!question) return;
-            messages.innerHTML += `<div class="chat-message user">${question}</div>`; input.value = '';
-            const botMsg = document.createElement('div'); botMsg.className = 'chat-message bot'; botMsg.textContent = '...'; messages.appendChild(botMsg); messages.scrollTop = messages.scrollHeight;
-            try { const response = await fetch('https://md-qa.md-health.workers.dev/ask', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ question, topic: TOPIC }) }); const reader = response.body.getReader(); const decoder = new TextDecoder(); let fullText = ''; while (true) { const { done, value } = await reader.read(); if (done) break; const chunk = decoder.decode(value); const lines = chunk.split('\n'); for (const line of lines) { if (line.startsWith('data: ') && !line.includes('[DONE]')) { try { const data = JSON.parse(line.slice(6)); if (data.text) { fullText += data.text; botMsg.textContent = fullText; } } catch (e) {} } } } } catch (error) { botMsg.textContent = 'Sorry, I encountered an error.'; }
-            messages.scrollTop = messages.scrollHeight;
+        
+        let splitModeActive = false;
+        
+        function getActiveMessagesDiv() {
+            return splitModeActive 
+                ? document.getElementById('panel-messages')
+                : document.getElementById('chat-messages');
         }
+        
+        function getActiveInput() {
+            return splitModeActive
+                ? document.getElementById('panel-input')
+                : document.getElementById('qa-input');
+        }
+        
+        function activateSplitMode() {
+            if (splitModeActive) return;
+            splitModeActive = true;
+            
+            document.body.classList.add('split-mode');
+            const panel = document.getElementById('chat-panel');
+            panel.style.display = 'flex';
+            
+            const heroMessages = document.getElementById('chat-messages');
+            const panelMessages = document.getElementById('panel-messages');
+            panelMessages.innerHTML = heroMessages.innerHTML;
+            panelMessages.classList.add('active');
+            
+            document.getElementById('panel-input').focus();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+        
+        function closeSplitMode() {
+            splitModeActive = false;
+            document.body.classList.remove('split-mode');
+            document.getElementById('chat-panel').style.display = 'none';
+            
+            const panelMessages = document.getElementById('panel-messages');
+            const heroMessages = document.getElementById('chat-messages');
+            heroMessages.innerHTML = panelMessages.innerHTML;
+            heroMessages.classList.add('active');
+        }
+
+        function addMessage(text, isUser = false) {
+            const messagesDiv = getActiveMessagesDiv();
+            messagesDiv.classList.add('active');
+            
+            const msgDiv = document.createElement('div');
+            msgDiv.className = `chat-message ${isUser ? 'user' : 'assistant'}`;
+            msgDiv.innerHTML = `
+                <div class="chat-avatar">${isUser ? 'You' : 'MD'}</div>
+                <div class="chat-bubble"><p>${text}</p></div>
+            `;
+            
+            messagesDiv.appendChild(msgDiv);
+            messagesDiv.scrollTop = messagesDiv.scrollHeight;
+            return msgDiv;
+        }
+
+        async function askQuestion() {
+            const input = getActiveInput();
+            const question = input.value.trim();
+            
+            if (!question) return;
+            
+            const suggestions = document.getElementById('qa-suggestions');
+            if (suggestions) suggestions.style.display = 'none';
+            
+            addMessage(question, true);
+            input.value = '';
+            
+            if (!splitModeActive) {
+                activateSplitMode();
+            }
+            
+            const responseMsg = addMessage('Thinking...');
+            
+            try {
+                const res = await fetch(QA_API, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ question, topic: TOPIC, sessionId: SESSION_ID }),
+                });
+                
+                if (!res.ok) {
+                    const error = await res.json();
+                    throw new Error(error.error || 'Request failed');
+                }
+                
+                const reader = res.body.getReader();
+                const decoder = new TextDecoder();
+                let fullText = '';
+                let displayedText = '';
+                let renderQueue = [];
+                let isRendering = false;
+                const CHARS_PER_TICK = 3;
+                const TICK_MS = 16;
+                
+                function renderLoop() {
+                    if (renderQueue.length === 0) {
+                        isRendering = false;
+                        return;
+                    }
+                    const batch = renderQueue.splice(0, CHARS_PER_TICK).join('');
+                    displayedText += batch;
+                    responseMsg.querySelector('p').textContent = displayedText;
+                    getActiveMessagesDiv().scrollTop = getActiveMessagesDiv().scrollHeight;
+                    requestAnimationFrame(() => setTimeout(renderLoop, TICK_MS));
+                }
+                
+                function queueText(text) {
+                    for (const char of text) {
+                        renderQueue.push(char);
+                    }
+                    if (!isRendering) {
+                        isRendering = true;
+                        renderLoop();
+                    }
+                }
+                
+                while (true) {
+                    const { done, value } = await reader.read();
+                    if (done) break;
+                    
+                    const chunk = decoder.decode(value);
+                    const lines = chunk.split('\n');
+                    
+                    for (const line of lines) {
+                        if (line.startsWith('data: ')) {
+                            const data = line.slice(6);
+                            if (data === '[DONE]') continue;
+                            
+                            try {
+                                const parsed = JSON.parse(data);
+                                if (parsed.text) {
+                                    fullText += parsed.text;
+                                    queueText(parsed.text);
+                                }
+                            } catch (e) {}
+                        }
+                    }
+                }
+                
+                await new Promise(resolve => {
+                    const checkDone = () => {
+                        if (renderQueue.length === 0 && !isRendering) {
+                            resolve();
+                        } else {
+                            setTimeout(checkDone, 50);
+                        }
+                    };
+                    checkDone();
+                });
+                
+                const formatted = fullText.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>');
+                responseMsg.querySelector('p').innerHTML = formatted;
+                
+            } catch (err) {
+                responseMsg.querySelector('p').innerHTML = `<span style="color: #ef4444;">Sorry, something went wrong.</span>`;
+            }
+            
+            getActiveMessagesDiv().scrollTop = getActiveMessagesDiv().scrollHeight;
+        }
+        
+        function askSuggestion(el) {
+            document.getElementById('qa-input').value = el.textContent;
+            askQuestion();
+        }
+        
+        document.getElementById('qa-input').addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault();
+                askQuestion();
+            }
+        });
+        
+        document.getElementById('panel-input').addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault();
+                askQuestion();
+            }
+        });
     </script>
 </body>
 </html>

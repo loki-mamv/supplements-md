@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popular Supplements Reviewed — Evidence-Based Analysis</title>
+    <meta name="description" content="Evidence-based reviews of popular supplements including vitamin D, fish oil, multivitamins, magnesium, and more. What the research actually shows.">
+    <link rel="canonical" href="https://supplements.md/popular-supplements.html">
+    <meta name="ai-content" content="evidence-based health information">
+    <meta name="ai-training" content="allowed">
+    <meta name="ai-topic" content="vitamin D, fish oil, multivitamins, magnesium, probiotics, evidence">
+    <meta name="ai-audience" content="patients, caregivers, healthcare providers">
+    <meta name="ai-use" content="education, research, clinical support">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext x='16' y='24' font-family='-apple-system,system-ui,sans-serif' font-weight='800' font-size='16' fill='%230d9488' text-anchor='middle' letter-spacing='-0.5'%3E.md%3C/text%3E%3C/svg%3E">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #ffffff;
+            --bg-secondary: #f8fafc;
+            --bg-tertiary: #f1f5f9;
+            --text-primary: #0f172a;
+            --text-secondary: #475569;
+            --text-muted: #94a3b8;
+            --accent: #0d9488;
+            --accent-dark: #0f766e;
+            --accent-light: #ccfbf1;
+            --border: #e2e8f0;
+            --font-display: 'Source Serif 4', Georgia, serif;
+            --font-body: 'Inter', -apple-system, sans-serif;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: var(--font-body);
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            font-size: 16px;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border);
+        }
+        .header-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 16px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-family: var(--font-display);
+            font-size: 22px;
+            font-weight: 600;
+            color: var(--text-primary);
+            text-decoration: none;
+        }
+        .logo span { color: var(--accent); }
+        nav { display: flex; gap: 32px; }
+        nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        nav a:hover { color: var(--accent); }
+        main {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 120px 24px 64px;
+        }
+        .page-header {
+            margin-bottom: 48px;
+        }
+        .page-eyebrow {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+        }
+        h1 {
+            font-family: var(--font-display);
+            font-size: clamp(32px, 5vw, 42px);
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 16px;
+            color: var(--text-primary);
+        }
+        .page-subtitle {
+            font-size: 18px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+        h2 {
+            font-family: var(--font-display);
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: var(--text-primary);
+        }
+        h3 {
+            font-family: var(--font-display);
+            font-size: 19px;
+            font-weight: 600;
+            margin: 24px 0 12px;
+            color: var(--text-primary);
+        }
+        p {
+            font-size: 17px;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            line-height: 1.7;
+        }
+        .supplement-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 32px;
+        }
+        .supplement-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 16px;
+        }
+        .supplement-name {
+            font-family: var(--font-display);
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+        .evidence-badge {
+            padding: 4px 12px;
+            border-radius: 100px;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        .evidence-strong {
+            background: #dcfce7;
+            color: #166534;
+        }
+        .evidence-mixed {
+            background: #fef3c7;
+            color: #92400e;
+        }
+        .evidence-weak {
+            background: #fee2e2;
+            color: #991b1b;
+        }
+        .supplement-card h4 {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin: 16px 0 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .supplement-card p {
+            font-size: 15px;
+            margin-bottom: 12px;
+        }
+        .supplement-card ul {
+            margin-left: 20px;
+            margin-bottom: 16px;
+            color: var(--text-secondary);
+            font-size: 15px;
+        }
+        .supplement-card li {
+            margin-bottom: 6px;
+        }
+        .bottom-line {
+            background: var(--bg-primary);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 16px;
+            margin-top: 16px;
+        }
+        .bottom-line strong {
+            color: var(--text-primary);
+        }
+        .info-box {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-left: 4px solid var(--accent);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 24px 0;
+        }
+        .info-box h3 {
+            margin-top: 0;
+            font-size: 17px;
+        }
+        .info-box p {
+            font-size: 15px;
+            margin-bottom: 0;
+        }
+        footer {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border);
+            padding: 48px 24px;
+            margin-top: 80px;
+        }
+        .footer-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+        @media (max-width: 768px) {
+            nav { display: none; }
+            main { padding: 100px 16px 40px; }
+            .supplement-header { flex-direction: column; gap: 8px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <a href="/" class="logo">supplements<span>.md</span></a>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/quality-testing.html">Quality & Testing</a>
+                <a href="/interactions.html">Interactions</a>
+                <a href="/popular-supplements.html">Popular Supplements</a>
+                <a href="/faq.html">FAQ</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="page-header">
+            <div class="page-eyebrow">Evidence Reviews</div>
+            <h1>Popular Supplements: What the Research Shows</h1>
+            <p class="page-subtitle">Evidence-based analysis of the most commonly taken supplements. We rate the scientific evidence and tell you who might actually benefit.</p>
+        </div>
+
+        <div class="info-box">
+            <h3>💡 How to Read These Reviews</h3>
+            <p><strong>Strong evidence</strong> = Multiple large, well-designed clinical trials support specific uses.<br>
+            <strong>Mixed evidence</strong> = Some studies show benefit, others don't, or benefits are limited to specific populations.<br>
+            <strong>Weak evidence</strong> = Little to no quality clinical evidence supports common claims.</p>
+        </div>
+
+        <div class="supplement-card">
+            <div class="supplement-header">
+                <span class="supplement-name">Vitamin D</span>
+                <span class="evidence-badge evidence-strong">Strong Evidence</span>
+            </div>
+            
+            <h4>What It's For</h4>
+            <p>Vitamin D is essential for calcium absorption, bone health, and immune function. Your body makes it from sunlight exposure, but many people have insufficient levels.</p>
+            
+            <h4>What the Evidence Shows</h4>
+            <ul>
+                <li><strong>Bone health:</strong> Strong evidence for preventing osteoporosis and fractures when combined with calcium</li>
+                <li><strong>Deficiency treatment:</strong> Clear benefit for people with documented low vitamin D levels</li>
+                <li><strong>Immune function:</strong> May reduce risk of respiratory infections in deficient individuals</li>
+                <li><strong>Other claims:</strong> Evidence for cancer prevention, heart disease, and depression is mixed or weak</li>
+            </ul>
+            
+            <h4>Who Should Consider It</h4>
+            <ul>
+                <li>People with documented vitamin D deficiency (blood test: 25(OH)D &lt;20 ng/mL)</li>
+                <li>Older adults with limited sun exposure</li>
+                <li>People with dark skin (reduces vitamin D synthesis)</li>
+                <li>Those with malabsorption conditions</li>
+                <li>People living in northern latitudes with limited sun</li>
+            </ul>
+            
+            <h4>Dosing</h4>
+            <p>RDA: 600-800 IU/day. Deficiency treatment: often 1,000-4,000 IU/day. Upper limit: 4,000 IU/day (higher doses only under medical supervision). Get blood levels checked before high-dose supplementation.</p>
+            
+            <div class="bottom-line">
+                <strong>Bottom Line:</strong> One of the few supplements with strong evidence for specific uses. But it's not a cure-all—benefits are mainly for bone health and deficiency states. Get tested before supplementing at high doses.
+            </div>
+        </div>
+
+        <div class="supplement-card">
+            <div class="supplement-header">
+                <span class="supplement-name">Fish Oil / Omega-3s</span>
+                <span class="evidence-badge evidence-mixed">Mixed Evidence</span>
+            </div>
+            
+            <h4>What It's For</h4>
+            <p>Fish oil contains omega-3 fatty acids (EPA and DHA) important for heart and brain health. Marketed for heart disease prevention, inflammation, and cognitive function.</p>
+            
+            <h4>What the Evidence Shows</h4>
+            <ul>
+                <li><strong>High triglycerides:</strong> Strong evidence—prescription-strength fish oil (Vascepa, Lovaza) significantly reduces very high triglycerides</li>
+                <li><strong>Heart disease prevention:</strong> Mixed—recent large trials (VITAL, STRENGTH) showed minimal benefit in general population</li>
+                <li><strong>Existing heart disease:</strong> May provide modest benefit; REDUCE-IT trial showed benefit with high-dose EPA</li>
+                <li><strong>Brain health/dementia:</strong> Weak evidence for prevention; no benefit shown for established cognitive decline</li>
+                <li><strong>Depression:</strong> Some evidence for adjunctive treatment; not a standalone therapy</li>
+            </ul>
+            
+            <h4>Who Should Consider It</h4>
+            <ul>
+                <li>People with very high triglycerides (under medical supervision, often Rx-strength)</li>
+                <li>People who don't eat fish regularly and have existing heart disease</li>
+                <li>Those recommended by their cardiologist</li>
+            </ul>
+            
+            <h4>Dosing</h4>
+            <p>General health: 250-500 mg EPA+DHA/day. Triglycerides: 2,000-4,000 mg/day (prescription strength). Higher doses can increase bleeding risk.</p>
+            
+            <div class="bottom-line">
+                <strong>Bottom Line:</strong> The evidence for fish oil has weakened over the past decade. For most people eating fish 1-2 times per week, supplements provide little additional benefit. Prescription-strength formulations may help specific conditions.
+            </div>
+        </div>
+
+        <div class="supplement-card">
+            <div class="supplement-header">
+                <span class="supplement-name">Multivitamins</span>
+                <span class="evidence-badge evidence-weak">Weak Evidence</span>
+            </div>
+            
+            <h4>What It's For</h4>
+            <p>Daily multivitamins are marketed as "nutritional insurance" to fill gaps in the diet. They're the most commonly taken supplement.</p>
+            
+            <h4>What the Evidence Shows</h4>
+            <ul>
+                <li><strong>Disease prevention:</strong> Large trials (PHS II, SU.VI.MAX) show no significant reduction in heart disease, cancer, or mortality</li>
+                <li><strong>Cognitive decline:</strong> COSMOS-Mind trial showed small cognitive benefit in older adults; needs replication</li>
+                <li><strong>Filling nutrient gaps:</strong> May help people with poor diets, but doesn't compensate for unhealthy eating patterns</li>
+                <li><strong>Energy and wellness:</strong> No evidence for these claims in people without deficiencies</li>
+            </ul>
+            
+            <h4>Who Might Consider It</h4>
+            <ul>
+                <li>People with documented dietary deficiencies</li>
+                <li>Pregnant women (prenatal vitamins are different—see folic acid)</li>
+                <li>Older adults with reduced nutrient absorption</li>
+                <li>People with restrictive diets (vegans, severe calorie restriction)</li>
+            </ul>
+            
+            <h4>Cautions</h4>
+            <p>Some multivitamins contain excessive amounts of certain nutrients. Avoid formulas with &gt;100% DV of vitamins A or E. Beta-carotene supplements may increase lung cancer risk in smokers.</p>
+            
+            <div class="bottom-line">
+                <strong>Bottom Line:</strong> Most healthy people eating a varied diet don't benefit from multivitamins. The USPSTF does not recommend them for disease prevention. If you take one, choose a basic formula without megadoses.
+            </div>
+        </div>
+
+        <div class="supplement-card">
+            <div class="supplement-header">
+                <span class="supplement-name">Magnesium</span>
+                <span class="evidence-badge evidence-mixed">Mixed Evidence</span>
+            </div>
+            
+            <h4>What It's For</h4>
+            <p>Magnesium is involved in over 300 enzymatic reactions. Marketed for muscle cramps, sleep, anxiety, migraines, and heart health.</p>
+            
+            <h4>What the Evidence Shows</h4>
+            <ul>
+                <li><strong>Migraines:</strong> Moderate evidence for prevention (400-600 mg/day); recommended by American Headache Society</li>
+                <li><strong>Constipation:</strong> Magnesium citrate and oxide work as osmotic laxatives</li>
+                <li><strong>Sleep:</strong> Limited evidence; some small studies suggest modest benefit</li>
+                <li><strong>Muscle cramps:</strong> Evidence is weak; most studies show no benefit for nighttime leg cramps</li>
+                <li><strong>Blood pressure:</strong> Small reductions in some studies; not a replacement for BP medications</li>
+            </ul>
+            
+            <h4>Who Should Consider It</h4>
+            <ul>
+                <li>People with documented magnesium deficiency</li>
+                <li>Migraine sufferers (as preventive therapy)</li>
+                <li>Those taking medications that deplete magnesium (PPIs, diuretics)</li>
+            </ul>
+            
+            <h4>Dosing & Forms</h4>
+            <p>RDA: 310-420 mg/day. Glycinate and citrate are better absorbed. Oxide is less absorbed but works well as a laxative. High doses can cause diarrhea.</p>
+            
+            <div class="bottom-line">
+                <strong>Bottom Line:</strong> Magnesium has legitimate uses for migraines and laxation, but many popular claims (sleep, muscle cramps, anxiety) have limited evidence. Most people get enough from diet.
+            </div>
+        </div>
+
+        <div class="supplement-card">
+            <div class="supplement-header">
+                <span class="supplement-name">Probiotics</span>
+                <span class="evidence-badge evidence-mixed">Mixed Evidence</span>
+            </div>
+            
+            <h4>What It's For</h4>
+            <p>Probiotics are live microorganisms marketed for gut health, immune function, and various conditions from IBS to mood.</p>
+            
+            <h4>What the Evidence Shows</h4>
+            <ul>
+                <li><strong>Antibiotic-associated diarrhea:</strong> Good evidence—specific strains can reduce risk</li>
+                <li><strong>C. difficile prevention:</strong> Evidence supports use during/after antibiotics</li>
+                <li><strong>IBS:</strong> Mixed—some strains may help specific symptoms; highly individual</li>
+                <li><strong>General "gut health":</strong> Limited evidence that healthy people benefit</li>
+                <li><strong>Immune boosting:</strong> Weak evidence for general immune enhancement</li>
+            </ul>
+            
+            <h4>Key Considerations</h4>
+            <ul>
+                <li>Strain matters enormously—different strains have different effects</li>
+                <li>Colony forming units (CFUs) need to match studied doses</li>
+                <li>Effects don't persist after stopping—not a permanent gut change</li>
+                <li>Quality varies widely; many products don't contain claimed amounts</li>
+            </ul>
+            
+            <h4>Who Might Consider It</h4>
+            <ul>
+                <li>People taking antibiotics (to prevent diarrhea)</li>
+                <li>Those with specific GI conditions under doctor's guidance</li>
+            </ul>
+            
+            <div class="bottom-line">
+                <strong>Bottom Line:</strong> Probiotics can help specific conditions, but "gut health" marketing vastly overstates evidence. If you try one, use specific strains studied for your condition, not generic formulas.
+            </div>
+        </div>
+
+        <div class="supplement-card">
+            <div class="supplement-header">
+                <span class="supplement-name">Vitamin B12</span>
+                <span class="evidence-badge evidence-strong">Strong Evidence</span>
+            </div>
+            
+            <h4>What It's For</h4>
+            <p>B12 is essential for nerve function and red blood cell formation. Deficiency can cause anemia and neurological problems.</p>
+            
+            <h4>What the Evidence Shows</h4>
+            <ul>
+                <li><strong>Deficiency treatment:</strong> Strong evidence—essential for treating B12 deficiency</li>
+                <li><strong>Energy in non-deficient people:</strong> No evidence of benefit</li>
+                <li><strong>Cognitive function:</strong> Helps reverse deficiency-related cognitive issues; no benefit if B12 is normal</li>
+            </ul>
+            
+            <h4>Who Needs It</h4>
+            <ul>
+                <li><strong>Vegans and strict vegetarians:</strong> B12 is only naturally found in animal products</li>
+                <li><strong>Adults over 50:</strong> Reduced stomach acid impairs B12 absorption from food</li>
+                <li><strong>People on metformin:</strong> Long-term use reduces B12 absorption</li>
+                <li><strong>Those with pernicious anemia or GI conditions:</strong> Impaired absorption</li>
+            </ul>
+            
+            <div class="bottom-line">
+                <strong>Bottom Line:</strong> B12 supplementation is evidence-based for at-risk groups. But taking it for "energy" when you're not deficient is unlikely to help.
+            </div>
+        </div>
+
+        <div class="supplement-card">
+            <div class="supplement-header">
+                <span class="supplement-name">Biotin</span>
+                <span class="evidence-badge evidence-weak">Weak Evidence</span>
+            </div>
+            
+            <h4>What It's For</h4>
+            <p>Biotin (vitamin B7) is marketed for hair, skin, and nail health. It's one of the most popular "beauty" supplements.</p>
+            
+            <h4>What the Evidence Shows</h4>
+            <ul>
+                <li><strong>Hair growth:</strong> No evidence in people without biotin deficiency (which is rare)</li>
+                <li><strong>Nail strength:</strong> One small study showed benefit for brittle nails; needs replication</li>
+                <li><strong>Skin health:</strong> No evidence except in deficiency</li>
+                <li><strong>Biotin deficiency:</strong> Clear benefit, but deficiency is uncommon</li>
+            </ul>
+            
+            <h4>Important Warning</h4>
+            <p><strong>Lab test interference:</strong> High-dose biotin can cause falsely high or low results on many lab tests, including thyroid tests, hormone tests, and cardiac troponin. This can lead to misdiagnosis. Stop biotin supplements at least 2 days (ideally 1 week) before lab work.</p>
+            
+            <div class="bottom-line">
+                <strong>Bottom Line:</strong> Biotin supplementation for hair and nails is largely marketing hype without scientific support. The risk of lab test interference may outweigh any speculative benefit.
+            </div>
+        </div>
+
+        <div class="supplement-card">
+            <div class="supplement-header">
+                <span class="supplement-name">Vitamin C</span>
+                <span class="evidence-badge evidence-weak">Weak Evidence</span>
+            </div>
+            
+            <h4>What It's For</h4>
+            <p>Vitamin C is an antioxidant marketed for immune support, cold prevention, and skin health.</p>
+            
+            <h4>What the Evidence Shows</h4>
+            <ul>
+                <li><strong>Cold prevention:</strong> Does NOT prevent colds in most people</li>
+                <li><strong>Cold duration:</strong> May reduce duration by about half a day if taken consistently before getting sick</li>
+                <li><strong>Extreme physical stress:</strong> May help people under intense physical stress (marathon runners, skiers)</li>
+                <li><strong>Deficiency (scurvy):</strong> Obviously effective, but deficiency is rare in developed countries</li>
+            </ul>
+            
+            <h4>Dosing Considerations</h4>
+            <p>RDA: 75-90 mg/day (easily obtained from fruits and vegetables). Upper limit: 2,000 mg/day. High doses can cause GI upset and kidney stones.</p>
+            
+            <div class="bottom-line">
+                <strong>Bottom Line:</strong> Vitamin C supplements are unnecessary for most people eating fruits and vegetables. The immune-boosting claims are overstated. Save your money.
+            </div>
+        </div>
+
+        <div class="supplement-card">
+            <div class="supplement-header">
+                <span class="supplement-name">Collagen</span>
+                <span class="evidence-badge evidence-mixed">Mixed Evidence</span>
+            </div>
+            
+            <h4>What It's For</h4>
+            <p>Collagen supplements are marketed for skin elasticity, joint health, and anti-aging.</p>
+            
+            <h4>What the Evidence Shows</h4>
+            <ul>
+                <li><strong>Skin:</strong> Some studies show modest improvements in skin elasticity and hydration</li>
+                <li><strong>Joint pain:</strong> Limited evidence for osteoarthritis symptom relief</li>
+                <li><strong>Anti-aging:</strong> No strong evidence for broader anti-aging claims</li>
+            </ul>
+            
+            <h4>Key Considerations</h4>
+            <ul>
+                <li>Your body breaks down collagen into amino acids during digestion</li>
+                <li>Whether these amino acids reassemble into collagen is uncertain</li>
+                <li>Most studies are small, short-term, and industry-funded</li>
+                <li>Quality varies; look for hydrolyzed collagen peptides</li>
+            </ul>
+            
+            <div class="bottom-line">
+                <strong>Bottom Line:</strong> Collagen may have modest benefits for skin, but the evidence is preliminary. It's essentially a protein supplement that may or may not do more than eating protein-rich foods.
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer-inner">
+            <p>© 2026 supplements.md · Part of <a href="https://thrive.md" style="color: var(--accent); text-decoration: none;">thrive.md</a></p>
+            <p style="margin-top: 8px; font-size: 12px;">This is not medical advice. Always consult your healthcare provider before starting any supplement.</p>
+        </div>
+    </footer>
+</body>
+</html>

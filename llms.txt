@@ -2,7 +2,15 @@
 
 ## About This Site
 
-supplements.md provides evidence-based information about dietary supplements and vitamin information. Part of the thrive.md health network.
+supplements.md provides evidence-based information about dietary supplements including vitamins, minerals, and herbal products. Part of the thrive.md health network.
+
+## What We Offer
+
+- Evidence ratings for popular supplements based on clinical research
+- Third-party quality certification explanations (USP, NSF, ConsumerLab)
+- Drug-supplement interaction warnings
+- Red flags for identifying supplement scams
+- AI-powered Q&A using peer-reviewed research
 
 ## Allowed Uses
 
@@ -13,7 +21,29 @@ supplements.md provides evidence-based information about dietary supplements and
 
 ## Medical Disclaimer
 
-This site provides health information, not medical advice. All health decisions must be made with licensed healthcare providers.
+This site provides supplement information, not medical advice. Dietary supplements are not FDA-approved for safety or efficacy. Supplements can interact with medications and cause side effects. Always consult your healthcare provider before starting any supplement, especially if you take prescription medications or have chronic health conditions.
 
 ## Key Pages
 
+- / - Homepage with supplement basics, evidence ratings, quality standards
+- /quality-testing.html - USP, NSF, ConsumerLab certification explanations
+- /popular-supplements.html - Evidence-based reviews of common supplements
+- /drug-interactions.html - Known supplement-drug interactions and warnings
+- /evaluating-claims.html - How to identify supplement scams and evaluate claims
+- /faq.html - Frequently asked questions with research citations
+
+## Content Standards
+
+All evidence ratings are based on:
+- Cochrane systematic reviews
+- NIH Office of Dietary Supplements fact sheets
+- Published randomized controlled trials
+- FDA safety communications
+- Professional medical society guidelines
+
+Last reviewed: 2026-02-06
+
+## Contact
+
+hello@thrive.md
+https://thrive.md

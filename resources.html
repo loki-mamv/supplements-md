@@ -2,73 +2,180 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="ai-content" content="allowed">
-    <meta name="ai-training" content="allowed">
-    <meta name="ai-topic" content="supplements, vitamins, nutrition, health">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Supplement Resources — supplements.md</title>
-    <meta name="description" content="Curated supplement resources including research databases, quality testing organizations, interaction checkers, and evidence-based information sources.">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Supplements Guide">
-    <meta property="og:description" content="Evidence-based supplement information">
-    <meta property="og:site_name" content="thrive.md Health Network">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@thrivemd">
-    <meta name="twitter:title" content="Supplements Guide">
-    <meta name="twitter:description" content="Evidence-based supplement information">
-    <meta name="keywords" content="supplement resources, supplement research, third party testing, supplement interactions, dietary supplements, NIH supplements">
+    <title>Supplement Resources — Trusted Information Sources</title>
+    <meta name="description" content="Trusted resources for researching dietary supplements, including NIH databases, third-party testing sites, and interaction checkers.">
     <link rel="canonical" href="https://supplements.md/resources.html">
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext x='16' y='24' font-family='-apple-system,system-ui,sans-serif' font-weight='800' font-size='16' fill='%2306b6d4' text-anchor='middle' letter-spacing='-0.5'%3E.md%3C/text%3E%3C/svg%3E">
+    <meta name="ai-content" content="evidence-based health information">
+    <meta name="ai-training" content="allowed">
+    <meta name="ai-topic" content="supplement resources, NIH, FDA, research databases">
+    <meta name="ai-audience" content="patients, caregivers, healthcare providers">
+    <meta name="ai-use" content="education, research, clinical support">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext x='16' y='24' font-family='-apple-system,system-ui,sans-serif' font-weight='800' font-size='16' fill='%230d9488' text-anchor='middle' letter-spacing='-0.5'%3E.md%3C/text%3E%3C/svg%3E">
     <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
         :root {
             --bg-primary: #ffffff;
             --bg-secondary: #f8fafc;
+            --bg-tertiary: #f1f5f9;
             --text-primary: #0f172a;
             --text-secondary: #475569;
             --text-muted: #94a3b8;
-            --accent: #06b6d4;
-            --accent-dark: #0891b2;
-            --accent-light: #cffafe;
+            --accent: #0d9488;
+            --accent-dark: #0f766e;
+            --accent-light: #ccfbf1;
             --border: #e2e8f0;
             --font-display: 'Source Serif 4', Georgia, serif;
             --font-body: 'Inter', -apple-system, sans-serif;
         }
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: var(--font-body); background: var(--bg-primary); color: var(--text-primary); line-height: 1.7; }
-        header { background: var(--bg-primary); border-bottom: 1px solid var(--border); padding: 16px 24px; position: sticky; top: 0; z-index: 100; }
-        .header-inner { max-width: 900px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .logo { font-family: var(--font-display); font-size: 22px; font-weight: 600; color: var(--text-primary); text-decoration: none; }
+        body {
+            font-family: var(--font-body);
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            font-size: 16px;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border);
+        }
+        .header-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 16px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-family: var(--font-display);
+            font-size: 22px;
+            font-weight: 600;
+            color: var(--text-primary);
+            text-decoration: none;
+        }
         .logo span { color: var(--accent); }
-        nav a { color: var(--text-secondary); text-decoration: none; margin-left: 24px; font-size: 15px; }
+        nav { display: flex; gap: 32px; }
+        nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
         nav a:hover { color: var(--accent); }
-        main { max-width: 900px; margin: 0 auto; padding: 60px 24px; }
-        h1 { font-family: var(--font-display); font-size: 40px; font-weight: 600; margin-bottom: 16px; }
-        .intro { font-size: 18px; color: var(--text-secondary); margin-bottom: 48px; max-width: 600px; }
-        section { margin-bottom: 48px; }
-        h2 { font-family: var(--font-display); font-size: 24px; font-weight: 600; margin-bottom: 20px; padding-bottom: 12px; border-bottom: 2px solid var(--border); }
-        .resource-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
-        .resource-card { background: var(--bg-secondary); border-radius: 12px; padding: 24px; text-decoration: none; color: var(--text-primary); transition: all 0.2s; border: 1px solid transparent; }
-        .resource-card:hover { border-color: var(--accent); transform: translateY(-2px); }
-        .resource-card h3 { font-size: 17px; font-weight: 600; margin-bottom: 8px; display: flex; align-items: center; gap: 8px; }
-        .resource-card p { font-size: 14px; color: var(--text-secondary); margin-bottom: 12px; }
-        .resource-card .source { font-size: 12px; color: var(--text-muted); }
-        .tool-card { background: var(--accent-light); border: 1px solid var(--accent); }
-        .tool-card:hover { background: white; }
-        .cta-section { background: var(--bg-secondary); border-radius: 16px; padding: 40px; text-align: center; margin-top: 48px; }
-        .cta-section h2 { border: none; padding: 0; }
-        .cta-section p { color: var(--text-secondary); margin-bottom: 24px; }
-        .cta-btn { display: inline-block; padding: 14px 32px; background: var(--accent); color: white; text-decoration: none; border-radius: 8px; font-weight: 600; transition: background 0.2s; }
-        .cta-btn:hover { background: var(--accent-dark); }
-        footer { background: var(--bg-secondary); border-top: 1px solid var(--border); padding: 48px 24px; }
-        .footer-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; }
-        .footer-brand .logo { display: inline-block; margin-bottom: 12px; }
-        .footer-brand p { font-size: 14px; color: var(--text-muted); line-height: 1.6; }
-        .footer-links h4 { font-size: 12px; font-weight: 600; color: var(--text-primary); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 12px; }
-        .footer-links a { display: block; color: var(--text-muted); text-decoration: none; font-size: 14px; margin-bottom: 8px; transition: color 0.2s; }
-        .footer-links a:hover { color: var(--accent); }
-        .footer-bottom { max-width: 1100px; margin: 32px auto 0; padding-top: 24px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; font-size: 13px; color: var(--text-muted); }
-        @media (max-width: 768px) { .footer-inner { grid-template-columns: 1fr; gap: 24px; } .footer-bottom { flex-direction: column; gap: 8px; } }
+        main {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 120px 24px 64px;
+        }
+        .page-header {
+            margin-bottom: 48px;
+        }
+        .page-eyebrow {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+        }
+        h1 {
+            font-family: var(--font-display);
+            font-size: clamp(32px, 5vw, 42px);
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 16px;
+            color: var(--text-primary);
+        }
+        .page-subtitle {
+            font-size: 18px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+        .section {
+            margin-bottom: 48px;
+        }
+        h2 {
+            font-family: var(--font-display);
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: var(--text-primary);
+        }
+        p {
+            font-size: 17px;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            line-height: 1.7;
+        }
+        .resource-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 20px;
+            transition: border-color 0.2s;
+        }
+        .resource-card:hover {
+            border-color: var(--accent);
+        }
+        .resource-card h3 {
+            font-family: var(--font-display);
+            font-size: 19px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+        .resource-card h3 a {
+            color: var(--accent-dark);
+            text-decoration: none;
+        }
+        .resource-card h3 a:hover {
+            text-decoration: underline;
+        }
+        .resource-card p {
+            font-size: 15px;
+            margin-bottom: 12px;
+        }
+        .resource-tag {
+            display: inline-block;
+            padding: 4px 10px;
+            background: var(--accent-light);
+            color: var(--accent-dark);
+            border-radius: 100px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-right: 8px;
+        }
+        .resource-tag.paid {
+            background: #fef3c7;
+            color: #92400e;
+        }
+        footer {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border);
+            padding: 48px 24px;
+            margin-top: 80px;
+        }
+        .footer-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+        @media (max-width: 768px) {
+            nav { display: none; }
+            main { padding: 100px 16px 40px; }
+        }
     </style>
 </head>
 <body>
@@ -77,144 +184,177 @@
             <a href="/" class="logo">supplements<span>.md</span></a>
             <nav>
                 <a href="/">Home</a>
-                <a href="/blog.html">Articles</a>
-                <a href="/resources.html">Resources</a>
+                <a href="/quality-testing.html">Quality & Testing</a>
+                <a href="/interactions.html">Interactions</a>
+                <a href="/popular-supplements.html">Popular Supplements</a>
+                <a href="/faq.html">FAQ</a>
             </nav>
         </div>
     </header>
 
     <main>
-        <h1>Supplement Resources</h1>
-        <p class="intro">Curated tools and resources for researching supplements, checking quality, and understanding the evidence — all vetted by our editorial team.</p>
-
-        <section>
-            <h2>Research Databases</h2>
-            <div class="resource-grid">
-                <a href="https://ods.od.nih.gov/" target="_blank" class="resource-card tool-card">
-                    <h3>🔬 NIH Office of Dietary Supplements</h3>
-                    <p>The gold standard for supplement information. Fact sheets, research summaries, and RDA values from NIH.</p>
-                    <span class="source">ods.od.nih.gov</span>
-                </a>
-                <a href="https://www.nccih.nih.gov/health/herbsataglance" target="_blank" class="resource-card tool-card">
-                    <h3>🔬 NCCIH Herbs at a Glance</h3>
-                    <p>National Center for Complementary and Integrative Health guides to herbs and supplements.</p>
-                    <span class="source">nccih.nih.gov</span>
-                </a>
-                <a href="https://examine.com/" target="_blank" class="resource-card tool-card">
-                    <h3>🔬 Examine.com</h3>
-                    <p>Independent, unbiased analysis of supplement research. Study summaries and effect ratings.</p>
-                    <span class="source">examine.com</span>
-                </a>
-            </div>
-        </section>
-
-        <section>
-            <h2>Quality Testing & Verification</h2>
-            <div class="resource-grid">
-                <a href="https://www.consumerlab.com/" target="_blank" class="resource-card">
-                    <h3>✓ ConsumerLab</h3>
-                    <p>Independent testing of supplements for purity, potency, and label accuracy. Subscription required for full reports.</p>
-                    <span class="source">consumerlab.com</span>
-                </a>
-                <a href="https://www.usp.org/verification-services/verified-products" target="_blank" class="resource-card">
-                    <h3>✓ USP Verified Products</h3>
-                    <p>Search for supplements that meet USP quality standards. USP verification is a trusted quality mark.</p>
-                    <span class="source">usp.org</span>
-                </a>
-                <a href="https://www.nsfsport.com/certified-products/" target="_blank" class="resource-card">
-                    <h3>✓ NSF Certified for Sport</h3>
-                    <p>Supplements tested for banned substances. Essential for athletes subject to drug testing.</p>
-                    <span class="source">nsfsport.com</span>
-                </a>
-            </div>
-        </section>
-
-        <section>
-            <h2>Interaction Checkers</h2>
-            <div class="resource-grid">
-                <a href="https://www.mskcc.org/cancer-care/diagnosis-treatment/symptom-management/integrative-medicine/herbs" target="_blank" class="resource-card">
-                    <h3>⚠️ MSKCC About Herbs</h3>
-                    <p>Memorial Sloan Kettering's herb/supplement database with drug interactions and cancer-related concerns.</p>
-                    <span class="source">mskcc.org</span>
-                </a>
-                <a href="https://www.drugs.com/drug_interactions.html" target="_blank" class="resource-card">
-                    <h3>⚠️ Drugs.com Interaction Checker</h3>
-                    <p>Check for interactions between supplements and your medications. Includes severity ratings.</p>
-                    <span class="source">drugs.com</span>
-                </a>
-                <a href="https://naturalmedicines.therapeuticresearch.com/" target="_blank" class="resource-card">
-                    <h3>⚠️ Natural Medicines Database</h3>
-                    <p>Comprehensive professional database used by pharmacists. Interactions, efficacy ratings, and safety.</p>
-                    <span class="source">therapeuticresearch.com</span>
-                </a>
-            </div>
-        </section>
-
-        <section>
-            <h2>Safety & Recalls</h2>
-            <div class="resource-grid">
-                <a href="https://www.fda.gov/food/dietary-supplements" target="_blank" class="resource-card">
-                    <h3>🏛️ FDA Dietary Supplements</h3>
-                    <p>FDA guidance on supplement regulation, safety alerts, and recalls.</p>
-                    <span class="source">fda.gov</span>
-                </a>
-                <a href="https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts" target="_blank" class="resource-card">
-                    <h3>🏛️ FDA Recalls & Alerts</h3>
-                    <p>Current product recalls including supplements with contamination or undeclared ingredients.</p>
-                    <span class="source">fda.gov</span>
-                </a>
-            </div>
-        </section>
-
-        <section>
-            <h2>Educational Resources</h2>
-            <div class="resource-grid">
-                <a href="https://www.mayoclinic.org/drugs-supplements" target="_blank" class="resource-card">
-                    <h3>📚 Mayo Clinic Supplements</h3>
-                    <p>Evidence-based supplement information in patient-friendly language from Mayo Clinic.</p>
-                    <span class="source">mayoclinic.org</span>
-                </a>
-                <a href="https://www.health.harvard.edu/topics/vitamins-and-supplements" target="_blank" class="resource-card">
-                    <h3>📚 Harvard Health Supplements</h3>
-                    <p>Harvard Medical School's expert analysis of supplement research and recommendations.</p>
-                    <span class="source">health.harvard.edu</span>
-                </a>
-            </div>
-        </section>
-
-        <div class="cta-section">
-            <h2>Want to make informed supplement choices?</h2>
-            <p>Learn how to evaluate supplement claims, choose quality products, and avoid interactions with our evidence-based guides.</p>
-            <a href="/blog.html" class="cta-btn">Read Our Guides</a>
+        <div class="page-header">
+            <div class="page-eyebrow">Resources</div>
+            <h1>Trusted Supplement Resources</h1>
+            <p class="page-subtitle">Curated list of reliable sources for researching supplements, checking quality, verifying interactions, and finding evidence-based information.</p>
         </div>
+
+        <section class="section">
+            <h2>Government & Academic Resources</h2>
+            
+            <div class="resource-card">
+                <h3><a href="https://ods.nih.gov/" target="_blank" rel="noopener">NIH Office of Dietary Supplements</a></h3>
+                <p>The gold standard for supplement research. Provides comprehensive fact sheets on vitamins, minerals, and other supplements with evidence ratings, safety information, and research summaries. Start here for any supplement question.</p>
+                <span class="resource-tag">Free</span>
+                <span class="resource-tag">Government</span>
+            </div>
+
+            <div class="resource-card">
+                <h3><a href="https://www.fda.gov/food/dietary-supplements" target="_blank" rel="noopener">FDA Dietary Supplements</a></h3>
+                <p>Official FDA information on supplement regulation, safety alerts, warning letters to companies, and recalled products. Good for checking if a product or company has received FDA warnings.</p>
+                <span class="resource-tag">Free</span>
+                <span class="resource-tag">Government</span>
+            </div>
+
+            <div class="resource-card">
+                <h3><a href="https://nccih.nih.gov/" target="_blank" rel="noopener">NCCIH (NIH Complementary Health)</a></h3>
+                <p>National Center for Complementary and Integrative Health. Excellent resource for herbal supplements, traditional remedies, and alternative medicine. Evidence-based reviews of popular herbs and natural products.</p>
+                <span class="resource-tag">Free</span>
+                <span class="resource-tag">Government</span>
+            </div>
+
+            <div class="resource-card">
+                <h3><a href="https://www.cochranelibrary.com/" target="_blank" rel="noopener">Cochrane Library</a></h3>
+                <p>Systematic reviews and meta-analyses of clinical evidence. When you want to know if a supplement actually works, Cochrane reviews compile and analyze all available research. Many reviews are free to access.</p>
+                <span class="resource-tag">Free (most reviews)</span>
+                <span class="resource-tag">Academic</span>
+            </div>
+
+            <div class="resource-card">
+                <h3><a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank" rel="noopener">PubMed</a></h3>
+                <p>Free database of biomedical literature. Search for clinical trials and research studies on any supplement. Tip: Add "systematic review" or "meta-analysis" to your search for higher-quality evidence summaries.</p>
+                <span class="resource-tag">Free</span>
+                <span class="resource-tag">Academic</span>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Third-Party Testing & Quality Verification</h2>
+            
+            <div class="resource-card">
+                <h3><a href="https://www.usp.org/verification-services/verified-mark" target="_blank" rel="noopener">USP Verified Products Database</a></h3>
+                <p>Search for supplements that have earned USP verification—the most rigorous third-party certification available. If your supplement is available with USP verification, it's the best quality choice.</p>
+                <span class="resource-tag">Free</span>
+                <span class="resource-tag">Quality Testing</span>
+            </div>
+
+            <div class="resource-card">
+                <h3><a href="https://www.nsfsport.com/" target="_blank" rel="noopener">NSF Certified for Sport</a></h3>
+                <p>Database of supplements certified free of banned substances. Required by NFL, MLB, NHL, PGA, and many college athletic programs. Good for athletes and anyone wanting rigorous testing.</p>
+                <span class="resource-tag">Free</span>
+                <span class="resource-tag">Quality Testing</span>
+            </div>
+
+            <div class="resource-card">
+                <h3><a href="https://www.consumerlab.com/" target="_blank" rel="noopener">ConsumerLab</a></h3>
+                <p>Independent testing company that purchases supplements off shelves and tests them without manufacturer cooperation. Detailed reviews compare products within categories. Excellent for finding quality products.</p>
+                <span class="resource-tag paid">Subscription ~$50/year</span>
+                <span class="resource-tag">Quality Testing</span>
+            </div>
+
+            <div class="resource-card">
+                <h3><a href="https://labdoor.com/" target="_blank" rel="noopener">Labdoor</a></h3>
+                <p>Tests and grades popular supplements. Rankings based on label accuracy, purity, nutritional value, and ingredient safety. Free basic results; detailed reports require subscription.</p>
+                <span class="resource-tag">Free (basic)</span>
+                <span class="resource-tag">Quality Testing</span>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Interaction Checkers</h2>
+            
+            <div class="resource-card">
+                <h3><a href="https://naturalmedicines.therapeuticresearch.com/" target="_blank" rel="noopener">Natural Medicines Database</a></h3>
+                <p>The most comprehensive database for supplement-drug interactions, evidence ratings, and safety information. Used by healthcare professionals. Subscription required but very thorough.</p>
+                <span class="resource-tag paid">Subscription Required</span>
+                <span class="resource-tag">Professional</span>
+            </div>
+
+            <div class="resource-card">
+                <h3><a href="https://www.drugs.com/drug_interactions.html" target="_blank" rel="noopener">Drugs.com Interaction Checker</a></h3>
+                <p>Free interaction checker that includes some supplements. Good for quick checks, though not as comprehensive as Natural Medicines for supplements specifically.</p>
+                <span class="resource-tag">Free</span>
+                <span class="resource-tag">Interactions</span>
+            </div>
+
+            <div class="resource-card">
+                <h3><a href="https://www.mskcc.org/cancer-care/diagnosis-treatment/symptom-management/integrative-medicine/herbs" target="_blank" rel="noopener">Memorial Sloan Kettering Herb Database</a></h3>
+                <p>Excellent free resource from a major cancer center. Detailed information on herbal supplements including mechanisms, interactions, and safety concerns. Especially relevant for cancer patients.</p>
+                <span class="resource-tag">Free</span>
+                <span class="resource-tag">Academic</span>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Professional Organizations</h2>
+            
+            <div class="resource-card">
+                <h3><a href="https://www.aafp.org/" target="_blank" rel="noopener">American Academy of Family Physicians</a></h3>
+                <p>Patient education materials on supplements and evidence-based guidance. Search their site for specific supplement topics.</p>
+                <span class="resource-tag">Free</span>
+                <span class="resource-tag">Professional</span>
+            </div>
+
+            <div class="resource-card">
+                <h3><a href="https://www.eatright.org/" target="_blank" rel="noopener">Academy of Nutrition and Dietetics</a></h3>
+                <p>Evidence-based nutrition information from registered dietitians. Good resource for understanding dietary sources vs. supplements.</p>
+                <span class="resource-tag">Free</span>
+                <span class="resource-tag">Professional</span>
+            </div>
+
+            <div class="resource-card">
+                <h3><a href="https://www.uspreventiveservicestaskforce.org/" target="_blank" rel="noopener">US Preventive Services Task Force</a></h3>
+                <p>Independent expert panel that reviews evidence for preventive services. Their recommendations on vitamin supplementation are highly influential and evidence-based.</p>
+                <span class="resource-tag">Free</span>
+                <span class="resource-tag">Government</span>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Safety Alerts & Recalls</h2>
+            
+            <div class="resource-card">
+                <h3><a href="https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts" target="_blank" rel="noopener">FDA Recalls & Alerts</a></h3>
+                <p>Official FDA recalls, market withdrawals, and safety alerts for dietary supplements. Check here if you're concerned about a specific product.</p>
+                <span class="resource-tag">Free</span>
+                <span class="resource-tag">Government</span>
+            </div>
+
+            <div class="resource-card">
+                <h3><a href="https://www.safemedication.com/" target="_blank" rel="noopener">Safe Medication (ISMP)</a></h3>
+                <p>Consumer-focused medication safety information from the Institute for Safe Medication Practices. Includes supplement safety issues.</p>
+                <span class="resource-tag">Free</span>
+                <span class="resource-tag">Safety</span>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Your Healthcare Team</h2>
+            <p>The most important resource is your own healthcare provider team:</p>
+            <ul style="margin-left: 24px; color: var(--text-secondary); line-height: 1.8;">
+                <li><strong>Your doctor</strong> can order blood tests to check for deficiencies and assess whether a supplement is appropriate for your specific health situation</li>
+                <li><strong>Your pharmacist</strong> is often the most accessible expert on drug interactions—they can check supplements against your medications</li>
+                <li><strong>A registered dietitian</strong> can assess your diet and recommend whether supplements or dietary changes are more appropriate</li>
+            </ul>
+            <p style="margin-top: 16px;">Always bring a complete list of your supplements (including brands and doses) to medical appointments.</p>
+        </section>
+
     </main>
 
     <footer>
         <div class="footer-inner">
-            <div class="footer-brand">
-                <a href="/" class="logo">supplements<span>.md</span></a>
-                <p>Part of the <a href="https://thrive.md" style="color: var(--accent); text-decoration: none;">thrive.md</a> health network. Evidence-based supplement information reviewed by clinicians.</p>
-            </div>
-            <div class="footer-links">
-                <h4>Guides</h4>
-                <a href="/vitamin-d.html">Vitamin D</a>
-                <a href="/magnesium-guide.html">Magnesium</a>
-                <a href="/omega-3.html">Omega-3s</a>
-            </div>
-            <div class="footer-links">
-                <h4>Resources</h4>
-                <a href="/resources.html">Resource Library</a>
-                <a href="/blog.html">All Articles</a>
-            </div>
-            <div class="footer-links">
-                <h4>About</h4>
-                <a href="/editorial-policy.html">Editorial Policy</a>
-                <a href="mailto:hello@thrive.md">Contact</a>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 supplements.md — Content is for informational purposes only</p>
-            <p>Privacy Policy · Terms of Use</p>
+            <p>© 2026 supplements.md · Part of <a href="https://thrive.md" style="color: var(--accent); text-decoration: none;">thrive.md</a></p>
+            <p style="margin-top: 8px; font-size: 12px;">This is not medical advice. Always consult your healthcare provider.</p>
         </div>
     </footer>
 </body>

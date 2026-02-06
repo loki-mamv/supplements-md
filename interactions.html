@@ -2,152 +2,461 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="ai-content" content="allowed">
-    <meta name="ai-training" content="allowed">
-    <meta name="ai-topic" content="supplements, vitamins, nutrition, health">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Supplement Drug Interactions — Dangerous Combinations | supplements.md</title>
-    <meta name="description" content="Supplements that interact with medications. Common dangerous combinations and how to check for interactions.">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Supplements Guide">
-    <meta property="og:description" content="Evidence-based supplement information">
-    <meta property="og:site_name" content="thrive.md Health Network">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@thrivemd">
-    <meta name="twitter:title" content="Supplements Guide">
-    <meta name="twitter:description" content="Evidence-based supplement information">
+    <title>Supplement-Drug Interactions — What You Need to Know</title>
+    <meta name="description" content="Common interactions between dietary supplements and prescription medications. Learn which supplements can affect drug efficacy and safety.">
     <link rel="canonical" href="https://supplements.md/interactions.html">
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext x='16' y='24' font-family='-apple-system,system-ui,sans-serif' font-weight='800' font-size='16' fill='%2322c55e' text-anchor='middle'%3E.md%3C/text%3E%3C/svg%3E">
+    <meta name="ai-content" content="evidence-based health information">
+    <meta name="ai-training" content="allowed">
+    <meta name="ai-topic" content="drug interactions, supplement safety, medication interactions">
+    <meta name="ai-audience" content="patients, caregivers, healthcare providers">
+    <meta name="ai-use" content="education, research, clinical support">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext x='16' y='24' font-family='-apple-system,system-ui,sans-serif' font-weight='800' font-size='16' fill='%230d9488' text-anchor='middle' letter-spacing='-0.5'%3E.md%3C/text%3E%3C/svg%3E">
     <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
-        :root { --bg-primary: #ffffff; --bg-secondary: #f8fafc; --text-primary: #0f172a; --text-secondary: #475569; --text-muted: #94a3b8; --accent: #22c55e; --accent-dark: #16a34a; --accent-light: #dcfce7; --border: #e2e8f0; --font-display: 'Source Serif 4', Georgia, serif; --font-body: 'Inter', -apple-system, sans-serif; }
+        :root {
+            --bg-primary: #ffffff;
+            --bg-secondary: #f8fafc;
+            --bg-tertiary: #f1f5f9;
+            --text-primary: #0f172a;
+            --text-secondary: #475569;
+            --text-muted: #94a3b8;
+            --accent: #0d9488;
+            --accent-dark: #0f766e;
+            --accent-light: #ccfbf1;
+            --border: #e2e8f0;
+            --font-display: 'Source Serif 4', Georgia, serif;
+            --font-body: 'Inter', -apple-system, sans-serif;
+        }
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: var(--font-body); background: var(--bg-primary); color: var(--text-primary); line-height: 1.8; font-size: 17px; }
-        header { background: var(--bg-primary); border-bottom: 1px solid var(--border); padding: 16px 24px; position: sticky; top: 0; z-index: 100; }
-        .header-inner { max-width: 800px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .logo { font-family: var(--font-display); font-size: 22px; font-weight: 600; color: var(--text-primary); text-decoration: none; }
+        body {
+            font-family: var(--font-body);
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            font-size: 16px;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border);
+        }
+        .header-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 16px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-family: var(--font-display);
+            font-size: 22px;
+            font-weight: 600;
+            color: var(--text-primary);
+            text-decoration: none;
+        }
         .logo span { color: var(--accent); }
-        nav a { color: var(--text-secondary); text-decoration: none; margin-left: 24px; font-size: 15px; }
-        article { max-width: 700px; margin: 0 auto; padding: 60px 24px 80px; }
-        .breadcrumb { font-size: 14px; color: var(--text-muted); margin-bottom: 16px; }
-        .breadcrumb a { color: var(--accent); text-decoration: none; }
-        h1 { font-family: var(--font-display); font-size: clamp(32px, 5vw, 42px); font-weight: 700; line-height: 1.2; margin-bottom: 16px; }
-        .article-meta { font-size: 14px; color: var(--text-muted); margin-bottom: 24px; }
-        .article-intro { font-size: 19px; color: var(--text-secondary); padding-bottom: 32px; border-bottom: 1px solid var(--border); margin-bottom: 32px; }
-        h2 { font-family: var(--font-display); font-size: 28px; font-weight: 600; margin: 48px 0 20px; }
-        p { margin-bottom: 20px; }
-        ul { margin: 0 0 20px 24px; }
-        li { margin-bottom: 10px; }
-        .interaction { background: #fef2f2; border: 1px solid #fecaca; border-radius: 12px; padding: 20px 24px; margin: 20px 0; }
-        .interaction h3 { color: #991b1b; margin-bottom: 12px; }
-        .interaction p { color: #7f1d1d; margin-bottom: 8px; }
-        .interaction ul { margin-bottom: 0; padding-left: 20px; color: #7f1d1d; }
-        .tip-box { background: var(--accent-light); border-radius: 12px; padding: 20px 24px; margin: 32px 0; }
-        .tip-box h4 { color: var(--accent-dark); margin-bottom: 8px; }
-        footer { background: var(--bg-secondary); border-top: 1px solid var(--border); padding: 48px 24px; }
-        .footer-inner { max-width: 700px; margin: 0 auto; text-align: center; font-size: 14px; color: var(--text-muted); }
-        .footer-inner a { color: var(--accent); text-decoration: none; }
-        @media (max-width: 768px) { nav { display: none; } }
+        nav { display: flex; gap: 32px; }
+        nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        nav a:hover { color: var(--accent); }
+        main {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 120px 24px 64px;
+        }
+        .page-header {
+            margin-bottom: 48px;
+        }
+        .page-eyebrow {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+        }
+        h1 {
+            font-family: var(--font-display);
+            font-size: clamp(32px, 5vw, 42px);
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 16px;
+            color: var(--text-primary);
+        }
+        .page-subtitle {
+            font-size: 18px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+        .section {
+            margin-bottom: 48px;
+        }
+        h2 {
+            font-family: var(--font-display);
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: var(--text-primary);
+        }
+        h3 {
+            font-family: var(--font-display);
+            font-size: 19px;
+            font-weight: 600;
+            margin: 24px 0 12px;
+            color: var(--text-primary);
+        }
+        p {
+            font-size: 17px;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            line-height: 1.7;
+        }
+        .interaction-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 24px 0;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .interaction-table thead {
+            background: var(--bg-secondary);
+        }
+        .interaction-table th {
+            padding: 12px 16px;
+            text-align: left;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text-primary);
+            border-bottom: 1px solid var(--border);
+        }
+        .interaction-table td {
+            padding: 12px 16px;
+            font-size: 14px;
+            color: var(--text-secondary);
+            border-bottom: 1px solid var(--border);
+            vertical-align: top;
+        }
+        .interaction-table tr:last-child td {
+            border-bottom: none;
+        }
+        .severity-high {
+            background: #fef2f2;
+        }
+        .severity-high td:first-child {
+            border-left: 4px solid #ef4444;
+        }
+        .severity-moderate {
+            background: #fffbeb;
+        }
+        .severity-moderate td:first-child {
+            border-left: 4px solid #f59e0b;
+        }
+        .warning-box {
+            background: #fef2f2;
+            border: 1px solid #fecaca;
+            border-left: 4px solid #ef4444;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 24px 0;
+        }
+        .warning-box h3 {
+            color: #991b1b;
+            margin-top: 0;
+            font-size: 17px;
+        }
+        .warning-box p {
+            color: #7f1d1d;
+            font-size: 15px;
+        }
+        .info-box {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-left: 4px solid var(--accent);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 24px 0;
+        }
+        .info-box h3 {
+            margin-top: 0;
+            font-size: 17px;
+            color: var(--text-primary);
+        }
+        .info-box p {
+            font-size: 15px;
+            margin-bottom: 0;
+        }
+        ul {
+            margin-left: 24px;
+            margin-bottom: 16px;
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        footer {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border);
+            padding: 48px 24px;
+            margin-top: 80px;
+        }
+        .footer-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+        @media (max-width: 768px) {
+            nav { display: none; }
+            main { padding: 100px 16px 40px; }
+            .interaction-table { font-size: 12px; }
+            .interaction-table th, .interaction-table td { padding: 8px 10px; }
+        }
     </style>
 </head>
 <body>
     <header>
         <div class="header-inner">
             <a href="/" class="logo">supplements<span>.md</span></a>
-            <nav><a href="/">Home</a><a href="/blog.html">Articles</a><a href="/resources.html">Resources</a></nav>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/quality-testing.html">Quality & Testing</a>
+                <a href="/interactions.html">Interactions</a>
+                <a href="/popular-supplements.html">Popular Supplements</a>
+                <a href="/faq.html">FAQ</a>
+            </nav>
         </div>
     </header>
 
-    <article>
-        <div class="breadcrumb"><a href="/">Home</a> / <a href="/blog.html">Articles</a> / Interactions</div>
-        <h1>Supplement Drug Interactions</h1>
-        <div class="article-meta">Updated Feb 2026 · 10 min read</div>
-        <p class="article-intro">"Natural" doesn't mean safe to combine with medications. Some supplements have serious, even life-threatening interactions with drugs.</p>
+    <main>
+        <div class="page-header">
+            <div class="page-eyebrow">Drug Interactions</div>
+            <h1>Supplement-Drug Interactions</h1>
+            <p class="page-subtitle">Supplements can interact with prescription and over-the-counter medications in ways that reduce drug effectiveness or increase side effects. Here are the most important interactions to know.</p>
+        </div>
 
-        <h2>High-Risk Supplements</h2>
+        <div class="warning-box">
+            <h3>⚠️ Always Tell Your Doctor</h3>
+            <p>Inform your healthcare provider about ALL supplements you take, including vitamins, minerals, herbs, and "natural" products. Bring the bottles to appointments. Some interactions can be serious or even life-threatening. Never stop a prescribed medication to take a supplement instead without medical guidance.</p>
+        </div>
 
-        <div class="interaction">
-            <h3>🚨 St. John's Wort</h3>
-            <p><strong>The biggest offender.</strong> Speeds up drug metabolism, making many medications less effective:</p>
+        <section class="section">
+            <h2>High-Risk Interactions</h2>
+            <p>These interactions can be dangerous and require careful management or avoidance:</p>
+            
+            <table class="interaction-table">
+                <thead>
+                    <tr>
+                        <th>Supplement</th>
+                        <th>Interacts With</th>
+                        <th>Effect</th>
+                        <th>Recommendation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="severity-high">
+                        <td><strong>St. John's Wort</strong></td>
+                        <td>Birth control pills, SSRIs, HIV medications, warfarin, cyclosporine, many others</td>
+                        <td>Reduces drug levels via CYP450 enzyme induction; can cause treatment failure or serotonin syndrome</td>
+                        <td>Avoid combination; tell doctor immediately if taking</td>
+                    </tr>
+                    <tr class="severity-high">
+                        <td><strong>Vitamin K</strong></td>
+                        <td>Warfarin (Coumadin)</td>
+                        <td>Reduces anticoagulant effect; can cause blood clots</td>
+                        <td>Keep vitamin K intake consistent; don't suddenly increase leafy greens or supplements</td>
+                    </tr>
+                    <tr class="severity-high">
+                        <td><strong>Ginkgo biloba</strong></td>
+                        <td>Blood thinners (warfarin, aspirin, clopidogrel)</td>
+                        <td>Increases bleeding risk</td>
+                        <td>Avoid combination; stop 2 weeks before surgery</td>
+                    </tr>
+                    <tr class="severity-high">
+                        <td><strong>High-dose Vitamin E</strong></td>
+                        <td>Blood thinners, chemotherapy drugs</td>
+                        <td>Increased bleeding; may reduce chemo effectiveness</td>
+                        <td>Avoid high doses (&gt;400 IU) with these medications</td>
+                    </tr>
+                    <tr class="severity-high">
+                        <td><strong>Grapefruit (juice/extract)</strong></td>
+                        <td>Statins, calcium channel blockers, some immunosuppressants, many drugs</td>
+                        <td>Increases drug levels to potentially toxic amounts</td>
+                        <td>Avoid grapefruit entirely with affected medications</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="section">
+            <h2>Moderate Interactions</h2>
+            <p>These require attention and timing adjustments but can often be managed:</p>
+            
+            <table class="interaction-table">
+                <thead>
+                    <tr>
+                        <th>Supplement</th>
+                        <th>Interacts With</th>
+                        <th>Effect</th>
+                        <th>Recommendation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="severity-moderate">
+                        <td><strong>Calcium</strong></td>
+                        <td>Thyroid medications (levothyroxine), tetracycline antibiotics, bisphosphonates</td>
+                        <td>Reduces absorption of the medication</td>
+                        <td>Take calcium 4+ hours apart from these medications</td>
+                    </tr>
+                    <tr class="severity-moderate">
+                        <td><strong>Iron</strong></td>
+                        <td>Thyroid medications, antibiotics (quinolones, tetracyclines), levodopa</td>
+                        <td>Reduces absorption of the medication</td>
+                        <td>Take iron 2-4 hours apart from these medications</td>
+                    </tr>
+                    <tr class="severity-moderate">
+                        <td><strong>Magnesium</strong></td>
+                        <td>Antibiotics, bisphosphonates, diuretics</td>
+                        <td>Reduces drug absorption; diuretics can deplete magnesium</td>
+                        <td>Separate doses by 2+ hours; monitor if on diuretics</td>
+                    </tr>
+                    <tr class="severity-moderate">
+                        <td><strong>Fish oil (high dose)</strong></td>
+                        <td>Blood thinners, blood pressure medications</td>
+                        <td>May increase bleeding risk; may enhance BP-lowering effect</td>
+                        <td>Monitor; inform doctor of high-dose fish oil use</td>
+                    </tr>
+                    <tr class="severity-moderate">
+                        <td><strong>Fiber supplements</strong></td>
+                        <td>Many oral medications</td>
+                        <td>Can reduce or delay drug absorption</td>
+                        <td>Take medications 1 hour before or 2 hours after fiber</td>
+                    </tr>
+                    <tr class="severity-moderate">
+                        <td><strong>Potassium</strong></td>
+                        <td>ACE inhibitors, ARBs, potassium-sparing diuretics</td>
+                        <td>Risk of hyperkalemia (high potassium)</td>
+                        <td>Avoid potassium supplements; monitor blood levels</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="section">
+            <h2>Interactions by Drug Class</h2>
+            
+            <h3>Blood Thinners (Warfarin, Aspirin, Clopidogrel)</h3>
+            <p>Blood thinners are among the most interaction-prone medications. Supplements that can increase bleeding risk:</p>
             <ul>
-                <li>Birth control pills (can cause pregnancy)</li>
-                <li>Blood thinners (warfarin)</li>
-                <li>HIV medications</li>
-                <li>Antidepressants (risk of serotonin syndrome)</li>
-                <li>Immunosuppressants (organ rejection risk)</li>
-                <li>Many cancer drugs</li>
+                <li><strong>Increase bleeding:</strong> Fish oil, vitamin E (high dose), ginkgo, garlic, ginger, feverfew, dong quai, willow bark</li>
+                <li><strong>Decrease effectiveness:</strong> Vitamin K, St. John's Wort, coenzyme Q10</li>
             </ul>
-        </div>
-
-        <div class="interaction">
-            <h3>🚨 Ginkgo Biloba</h3>
-            <p><strong>Increases bleeding risk.</strong> Dangerous with:</p>
+            
+            <h3>Diabetes Medications</h3>
             <ul>
-                <li>Blood thinners (warfarin, aspirin, Plavix)</li>
-                <li>NSAIDs (ibuprofen, naproxen)</li>
-                <li>Before surgery (stop 2 weeks before)</li>
+                <li><strong>May lower blood sugar further:</strong> Chromium, alpha-lipoic acid, berberine, fenugreek, bitter melon</li>
+                <li><strong>B12 with metformin:</strong> Metformin reduces B12 absorption; supplementation may be needed</li>
             </ul>
-        </div>
-
-        <div class="interaction">
-            <h3>🚨 Fish Oil / Omega-3s (high doses)</h3>
-            <p><strong>Increases bleeding risk</strong> at high doses (above 3g/day):</p>
+            
+            <h3>Blood Pressure Medications</h3>
             <ul>
-                <li>Blood thinners</li>
-                <li>Aspirin</li>
-                <li>Before surgery</li>
+                <li><strong>May lower BP further:</strong> Coenzyme Q10, fish oil, garlic, potassium</li>
+                <li><strong>May increase potassium:</strong> Potassium supplements with ACE inhibitors/ARBs</li>
             </ul>
-        </div>
-
-        <div class="interaction">
-            <h3>🚨 Vitamin K</h3>
-            <p><strong>Directly counteracts warfarin.</strong> If you take warfarin, keep vitamin K intake consistent. Don't start or stop supplements without telling your doctor.</p>
-        </div>
-
-        <div class="interaction">
-            <h3>🚨 Calcium</h3>
-            <p><strong>Blocks absorption of many drugs:</strong></p>
+            
+            <h3>Thyroid Medications (Levothyroxine)</h3>
+            <p>Many supplements reduce levothyroxine absorption:</p>
             <ul>
-                <li>Thyroid medication (levothyroxine)—take 4 hours apart</li>
-                <li>Certain antibiotics (fluoroquinolones, tetracyclines)</li>
-                <li>Bisphosphonates (osteoporosis drugs)</li>
+                <li>Calcium, iron, magnesium, aluminum (antacids)</li>
+                <li>Take thyroid medication on an empty stomach, 4 hours before or after these supplements</li>
             </ul>
-        </div>
-
-        <div class="interaction">
-            <h3>🚨 Iron</h3>
-            <p><strong>Similar absorption issues:</strong></p>
+            
+            <h3>Antidepressants (SSRIs, MAOIs)</h3>
             <ul>
-                <li>Thyroid medication—take 4 hours apart</li>
-                <li>Certain antibiotics</li>
-                <li>Levodopa (Parkinson's)</li>
+                <li><strong>Serotonin syndrome risk:</strong> St. John's Wort, 5-HTP, SAMe, tryptophan with SSRIs</li>
+                <li><strong>MAOIs:</strong> Tyramine-containing supplements, ginseng</li>
             </ul>
-        </div>
+        </section>
 
-        <h2>Before Surgery</h2>
-        <p>Many supplements affect bleeding or anesthesia. Tell your surgeon about EVERYTHING you take. Common ones to stop 1-2 weeks before surgery:</p>
-        <ul>
-            <li>Fish oil / omega-3s</li>
-            <li>Vitamin E (high doses)</li>
-            <li>Ginkgo</li>
-            <li>Garlic supplements</li>
-            <li>Ginger (high doses)</li>
-            <li>St. John's Wort</li>
-            <li>Ginseng</li>
-        </ul>
+        <section class="section">
+            <h2>St. John's Wort: The Most Dangerous Supplement</h2>
+            <p>St. John's Wort deserves special attention because it interacts with an exceptionally wide range of medications. It induces CYP450 enzymes in the liver, which metabolize many drugs faster than intended.</p>
+            
+            <p><strong>Medications significantly affected by St. John's Wort:</strong></p>
+            <ul>
+                <li>Birth control pills (risk of unintended pregnancy)</li>
+                <li>HIV medications (protease inhibitors, NNRTIs)</li>
+                <li>Immunosuppressants (cyclosporine, tacrolimus)</li>
+                <li>Warfarin and other anticoagulants</li>
+                <li>Antidepressants (SSRIs, SNRIs)</li>
+                <li>Statins</li>
+                <li>Calcium channel blockers</li>
+                <li>Benzodiazepines</li>
+                <li>Opioid pain medications</li>
+                <li>Cancer medications</li>
+            </ul>
+            
+            <div class="warning-box">
+                <h3>⚠️ If You Take St. John's Wort</h3>
+                <p>Tell your doctor immediately. Do not start St. John's Wort without checking interactions with all your current medications. Do not stop taking it suddenly if you're on other medications—the abrupt change can also be dangerous.</p>
+            </div>
+        </section>
 
-        <div class="tip-box">
-            <h4>✅ How to Check for Interactions</h4>
-            <p><strong>Tell your doctor and pharmacist</strong> about all supplements. Use drug interaction checkers like drugs.com or Medscape. The NIH's "MedlinePlus" has interaction information. When in doubt, ask before combining.</p>
-        </div>
+        <section class="section">
+            <h2>Before Surgery</h2>
+            <p>Many supplements should be stopped before surgical procedures due to bleeding risk or anesthesia interactions:</p>
+            
+            <p><strong>Stop at least 2 weeks before surgery:</strong></p>
+            <ul>
+                <li>Fish oil / omega-3s</li>
+                <li>Vitamin E (high dose)</li>
+                <li>Ginkgo biloba</li>
+                <li>Garlic supplements</li>
+                <li>Ginger (high dose)</li>
+                <li>Feverfew</li>
+                <li>St. John's Wort</li>
+                <li>Ginseng</li>
+                <li>Kava</li>
+                <li>Valerian</li>
+            </ul>
+            
+            <div class="info-box">
+                <h3>💡 Tell Your Surgical Team</h3>
+                <p>Bring a complete list of all supplements to your pre-operative appointment. Anesthesiologists need this information to ensure safe anesthesia and avoid interactions during surgery.</p>
+            </div>
+        </section>
 
-        <h2>The Golden Rule</h2>
-        <p>Always tell every healthcare provider about every supplement you take. Bring the bottles to appointments. Pharmacists are excellent resources for checking interactions—and it's free to ask them.</p>
-    </article>
+        <section class="section">
+            <h2>Resources for Checking Interactions</h2>
+            <p>Use these tools to check for interactions, but always confirm with your healthcare provider:</p>
+            <ul>
+                <li><strong>Natural Medicines Database:</strong> Most comprehensive (subscription required)</li>
+                <li><strong>NIH Office of Dietary Supplements:</strong> Free fact sheets with interaction info</li>
+                <li><strong>Drugs.com Interaction Checker:</strong> Free, includes some supplements</li>
+                <li><strong>Your pharmacist:</strong> Often the most accessible expert on drug interactions</li>
+            </ul>
+        </section>
+
+    </main>
 
     <footer>
         <div class="footer-inner">
-            <p>© 2026 supplements.md · Part of the <a href="https://thrive.md">thrive.md</a> health network</p>
+            <p>© 2026 supplements.md · Part of <a href="https://thrive.md" style="color: var(--accent); text-decoration: none;">thrive.md</a></p>
+            <p style="margin-top: 8px; font-size: 12px;">This is not medical advice. Always consult your healthcare provider about potential interactions.</p>
         </div>
     </footer>
 </body>
