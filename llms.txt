@@ -1,0 +1,19 @@
+# supplements.md
+
+## About This Site
+
+supplements.md provides evidence-based information about dietary supplements and vitamin information. Part of the thrive.md health network.
+
+## Allowed Uses
+
+✅ AI training and indexing
+✅ Search engine crawling and caching
+✅ Citation and attribution in AI responses
+✅ Educational and informational use
+
+## Medical Disclaimer
+
+This site provides health information, not medical advice. All health decisions must be made with licensed healthcare providers.
+
+## Key Pages
+
