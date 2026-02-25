@@ -65,6 +65,32 @@
         .footer-inner a { color:var(--accent);text-decoration:none; }
         @media (max-width:768px) { nav{display:none;} article{padding:100px 16px 40px;} }
     </style>
+
+    <script type="application/ld+json">
+    {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "supplements.md",
+      "item": "https://supplements.md/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://supplements.md/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "How Supplements Are Regulated in the US: DSHEA, FDA, and What It Means for You"
+    }
+  ]
+}
+    </script>
 </head>
 <body>
     <header>
@@ -193,7 +219,59 @@
 
         </div>
         <p class="review-date"><strong>Last reviewed:</strong> February 2026 by the thrive.md Clinical Advisory Team</p>
-    </article>
+    
+    <div class="related-articles" style="margin: 2.5rem 0; padding: 1.5rem; background: #f8fafc; border-radius: 10px; border: 1px solid #e2e8f0;">
+        <h3 style="font-family: 'Source Serif 4', Georgia, serif; font-size: 1.15rem; margin-bottom: 1rem; color: #0f172a;">Related Articles</h3>
+        <div style="display: grid; gap: 0.75rem;">
+            <a href="https://supplements.md/blog/supplement-regulation-explained.html" style="display: block; padding: 0.75rem; background: white; border-radius: 8px; border: 1px solid #e2e8f0; color: #0f172a; text-decoration: none; transition: border-color 0.2s;">
+                <span style="font-weight: 500;">How Supplements Are Regulated in the US: DSHEA, FDA, and What It Means for You</span>
+                <span style="display: block; font-size: 0.85rem; color: #64748b; margin-top: 0.25rem;">An explanation of how dietary supplements are regulated in the United States under DSHEA. Covers FDA</span>
+            </a>
+            <a href="https://supplements.md/blog/vitamin-d-complete-guide.html" style="display: block; padding: 0.75rem; background: white; border-radius: 8px; border: 1px solid #e2e8f0; color: #0f172a; text-decoration: none; transition: border-color 0.2s;">
+                <span style="font-weight: 500;">Vitamin D: A Complete Guide to Benefits, Dosing, and Testing</span>
+                <span style="display: block; font-size: 0.85rem; color: #64748b; margin-top: 0.25rem;">Evidence-based guide to vitamin D supplementation. Covers deficiency testing, proper dosing, D2 vs D</span>
+            </a>
+            <a href="https://supplements.md/blog/probiotics-evidence-review.html" style="display: block; padding: 0.75rem; background: white; border-radius: 8px; border: 1px solid #e2e8f0; color: #0f172a; text-decoration: none; transition: border-color 0.2s;">
+                <span style="font-weight: 500;">Probiotics: An Evidence Review of What Works and What Doesn't</span>
+                <span style="display: block; font-size: 0.85rem; color: #64748b; margin-top: 0.25rem;">A critical review of probiotic supplements. Covers which strains have evidence, which conditions the</span>
+            </a>
+        </div>
+        <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid #e2e8f0;">
+            <p style="font-size: 0.85rem; color: #64748b; margin-bottom: 0.5rem;">From the thrive.md network:</p>
+            <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+                <a href="https://thyroid.md" style="padding: 0.35rem 0.75rem; border: 1px solid #e2e8f0; border-radius: 20px; font-size: 0.8rem; color: #475569; background: white; text-decoration: none;">Thyroid Health</a>
+                <a href="https://asthma.md" style="padding: 0.35rem 0.75rem; border: 1px solid #e2e8f0; border-radius: 20px; font-size: 0.8rem; color: #475569; background: white; text-decoration: none;">Asthma Management</a>
+                <a href="https://thrive.md" style="padding: 0.35rem 0.75rem; border: 1px solid #e2e8f0; border-radius: 20px; font-size: 0.8rem; color: #475569; background: white; text-decoration: none;">thrive.md Health Network</a>
+            </div>
+        </div>
+    </div>
+
+</article>
+
+    <div class="email-capture" style="background: linear-gradient(135deg, #f0fdfa 0%, #f8fafc 100%); border: 1px solid #ccfbf1; border-radius: 12px; padding: 2rem; margin: 2rem 0; text-align: center;">
+        <p style="font-family: 'Source Serif 4', Georgia, serif; font-size: 1.2rem; font-weight: 600; color: #0f172a; margin-bottom: 0.25rem;">Get evidence-based health updates</p>
+        <p style="color: #64748b; font-size: 0.9rem; margin-bottom: 1rem;">No spam. Unsubscribe anytime.</p>
+        <form class="email-form" style="display: flex; gap: 0.5rem; max-width: 420px; margin: 0 auto; flex-wrap: wrap; justify-content: center;" onsubmit="submitEmail(event)">
+            <input type="email" name="email" placeholder="you@example.com" required style="flex: 1; min-width: 200px; padding: 0.6rem 1rem; border: 1px solid #d1d5db; border-radius: 8px; font-size: 0.95rem; outline: none;">
+            <input type="hidden" name="source" value="supplements.md">
+            <button type="submit" style="padding: 0.6rem 1.5rem; background: #0d9488; color: white; border: none; border-radius: 8px; font-size: 0.95rem; font-weight: 500; cursor: pointer;">Subscribe</button>
+        </form>
+        <p class="email-success" style="display: none; color: #0d9488; margin-top: 0.75rem; font-weight: 500;">✓ You're in! Check your inbox.</p>
+    </div>
+    <script>
+    function submitEmail(e) {
+        e.preventDefault();
+        const form = e.target;
+        const data = new FormData(form);
+        fetch('https://script.google.com/macros/s/AKfycbwUqO3zauyG_tuCZk0NALIDybayC7JhTbSm7RcQhivv6Lq0XCrQ8YgopTFqXjMSwt72/exec', {
+            method: 'POST', body: data, mode: 'no-cors'
+        }).then(() => {
+            form.style.display = 'none';
+            form.parentElement.querySelector('.email-success').style.display = 'block';
+        });
+    }
+    </script>
+
     <footer>
         <div class="footer-inner">
             <p>&copy; 2026 supplements.md &middot; A <a href="https://thrive.md">thrive.md</a> property &middot; <strong>Medical Disclaimer:</strong> This site provides information, not medical advice. Always consult your healthcare provider.</p>
