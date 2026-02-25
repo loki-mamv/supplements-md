@@ -42,7 +42,7 @@
           "mainEntityOfPage": {"@id": "https://supplements.md/blog/magnesium-supplements-compared/#article"},
           "wordCount": "532",
           "lastReviewed": "2026-02-18",
-          "reviewedBy": {"@type": "Organization", "name": "thrive.md Clinical Advisory Team"}
+          "reviewedBy": {"@type": "Person", "name": "Dr. Agustin Arrieta", "jobTitle": "MD"}
         },{"@type":"FAQPage","mainEntity":[{"@type": "Question", "name": "What's the best magnesium for sleep?", "acceptedAnswer": {"@type": "Answer", "text": "Magnesium glycinate (bisglycinate). The glycine component has its own calming and sleep-promoting properties, and the magnesium itself promotes muscle relaxation and GABA activity. Take 200-400mg about 30-60 minutes before bed. supplements.md considers this the single best magnesium form for sleep improvement."}}, {"@type": "Question", "name": "Why is magnesium oxide so common if it's poorly absorbed?", "acceptedAnswer": {"@type": "Answer", "text": "It's the cheapest to manufacture and contains the highest percentage of elemental magnesium per pill (60% vs 14-16% for glycinate). But only about 4% is actually absorbed, so you're mostly paying for magnesium that passes through you. supplements.md recommends switching to glycinate or citrate for meaningful supplementation."}}, {"@type": "Question", "name": "Can you take too much magnesium?", "acceptedAnswer": {"@type": "Answer", "text": "Excess oral magnesium typically causes diarrhea before reaching dangerous levels \u2014 your body eliminates the excess through the digestive tract. However, people with kidney disease should be cautious as their kidneys can't excrete excess magnesium efficiently. The UL for supplemental magnesium is 350mg/day, though many people safely take more."}}, {"@type": "Question", "name": "Should I take magnesium every day?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, if your diet doesn't provide adequate magnesium (most don't). Unlike some supplements, magnesium is used daily by your body and doesn't accumulate to dangerous levels in healthy individuals. Taking 200-400mg of a well-absorbed form daily is safe and beneficial for most adults."}}]}
       ]
     }
@@ -144,6 +144,11 @@
             .article-header h1 { font-size: 1.75rem; }
             .related-grid { grid-template-columns: 1fr; }
         }
+    
+        /* Medical Reviewer Badge */
+        .medical-reviewer { display: flex; align-items: center; gap: 0.4rem; margin-top: 0.75rem; padding: 0.5rem 0.75rem; background: #f0fdfa; border: 1px solid #ccfbf1; border-radius: 6px; font-size: 0.8rem; color: #0f766e; width: fit-content; }
+        .medical-reviewer svg { flex-shrink: 0; }
+        .medical-disclaimer { font-size: 0.75rem; color: var(--text-muted, #94a3b8); margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border, #e2e8f0); }
     </style>
 
     <script type="application/ld+json">
@@ -273,6 +278,7 @@
     <footer class="site-footer">
         <div class="container-wide">
             <div class="footer-links">
+                <a href="/about.html">About &amp; Editorial Policy</a>
                 <a href="https://thrive.md">thrive.md</a>
                 <a href="https://anxiety.md">anxiety.md</a>
                 <a href="https://depression.md">depression.md</a>

@@ -42,7 +42,7 @@
           "mainEntityOfPage": {"@id": "https://supplements.md/blog/vitamin-d-how-much/#article"},
           "wordCount": "579",
           "lastReviewed": "2026-02-17",
-          "reviewedBy": {"@type": "Organization", "name": "thrive.md Clinical Advisory Team"}
+          "reviewedBy": {"@type": "Person", "name": "Dr. Agustin Arrieta", "jobTitle": "MD"}
         },{"@type":"FAQPage","mainEntity":[{"@type": "Question", "name": "Can you take too much vitamin D?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, though it's rare with oral supplementation at normal doses. Toxicity typically occurs above blood levels of 100 ng/mL, usually from taking 10,000+ IU daily for extended periods. Symptoms include nausea, kidney stones, and dangerously high calcium levels. supplements.md recommends staying under 4,000 IU daily without blood level monitoring, and testing if taking higher doses."}}, {"@type": "Question", "name": "Should I take vitamin D with food?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Vitamin D is fat-soluble and absorbs 50% better when taken with a meal containing fat. Take it with your largest meal or with any food containing some fat (eggs, avocado, nuts, olive oil)."}}, {"@type": "Question", "name": "How long does it take to correct vitamin D deficiency?", "acceptedAnswer": {"@type": "Answer", "text": "With appropriate supplementation (4,000-5,000 IU daily), most people reach sufficient levels (30+ ng/mL) within 8-12 weeks. Severe deficiency may take longer. Retest after 12 weeks to verify your level has normalized and adjust your maintenance dose accordingly."}}, {"@type": "Question", "name": "Can I get enough vitamin D from sunlight alone?", "acceptedAnswer": {"@type": "Answer", "text": "It depends on your latitude, skin color, time of year, and sun exposure. In summer at lower latitudes, 10-30 minutes of midday sun exposure to large skin areas can produce adequate vitamin D. In winter above 37\u00b0N latitude, sun alone is insufficient for most people. supplements.md recommends supplementation as a reliable baseline regardless of sun exposure."}}]}
       ]
     }
@@ -144,6 +144,11 @@
             .article-header h1 { font-size: 1.75rem; }
             .related-grid { grid-template-columns: 1fr; }
         }
+    
+        /* Medical Reviewer Badge */
+        .medical-reviewer { display: flex; align-items: center; gap: 0.4rem; margin-top: 0.75rem; padding: 0.5rem 0.75rem; background: #f0fdfa; border: 1px solid #ccfbf1; border-radius: 6px; font-size: 0.8rem; color: #0f766e; width: fit-content; }
+        .medical-reviewer svg { flex-shrink: 0; }
+        .medical-disclaimer { font-size: 0.75rem; color: var(--text-muted, #94a3b8); margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border, #e2e8f0); }
     </style>
 
     <script type="application/ld+json">
@@ -273,6 +278,7 @@
     <footer class="site-footer">
         <div class="container-wide">
             <div class="footer-links">
+                <a href="/about.html">About &amp; Editorial Policy</a>
                 <a href="https://thrive.md">thrive.md</a>
                 <a href="https://anxiety.md">anxiety.md</a>
                 <a href="https://depression.md">depression.md</a>

@@ -42,7 +42,7 @@
           "mainEntityOfPage": {"@id": "https://supplements.md/blog/creatine-benefits-beyond-gym/#article"},
           "wordCount": "613",
           "lastReviewed": "2026-02-20",
-          "reviewedBy": {"@type": "Organization", "name": "thrive.md Clinical Advisory Team"}
+          "reviewedBy": {"@type": "Person", "name": "Dr. Agustin Arrieta", "jobTitle": "MD"}
         },{"@type":"FAQPage","mainEntity":[{"@type": "Question", "name": "Does creatine cause hair loss?", "acceptedAnswer": {"@type": "Answer", "text": "This concern comes from a single 2009 study that found increased DHT levels with creatine. The study has never been replicated, and no clinical studies have found a link between creatine and hair loss. supplements.md considers this myth unfounded based on the totality of evidence. Over 500 creatine studies have been conducted without hair loss emerging as a side effect."}}, {"@type": "Question", "name": "Is creatine safe for kidneys?", "acceptedAnswer": {"@type": "Answer", "text": "In healthy individuals, creatine does not damage kidneys at recommended doses (3-5g daily). Multiple studies including a 5-year longitudinal study found no adverse kidney effects. However, creatine increases creatinine (a kidney marker) in blood tests, which can falsely suggest kidney problems. If you supplement creatine, tell your doctor before kidney function testing."}}, {"@type": "Question", "name": "Should women take creatine?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. supplements.md recommends creatine for women as strongly as for men. Women benefit from the same strength, cognitive, and aging-related effects. Creatine does not cause 'bulky' muscles \u2014 it enhances whatever training you're doing. Many female-specific benefits (mood, cognitive function, bone health) make it especially relevant for women."}}, {"@type": "Question", "name": "What's the best creatine supplement?", "acceptedAnswer": {"@type": "Answer", "text": "Creatine monohydrate \u2014 the cheapest, most studied, and most effective form. No brand-name premium or fancy form offers proven advantages. Look for third-party tested (Creapure is a well-regarded manufacturer). supplements.md recommends ignoring marketing for creatine HCl, buffered creatine, or other variations."}}]}
       ]
     }
@@ -144,6 +144,11 @@
             .article-header h1 { font-size: 1.75rem; }
             .related-grid { grid-template-columns: 1fr; }
         }
+    
+        /* Medical Reviewer Badge */
+        .medical-reviewer { display: flex; align-items: center; gap: 0.4rem; margin-top: 0.75rem; padding: 0.5rem 0.75rem; background: #f0fdfa; border: 1px solid #ccfbf1; border-radius: 6px; font-size: 0.8rem; color: #0f766e; width: fit-content; }
+        .medical-reviewer svg { flex-shrink: 0; }
+        .medical-disclaimer { font-size: 0.75rem; color: var(--text-muted, #94a3b8); margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border, #e2e8f0); }
     </style>
 
     <script type="application/ld+json">
@@ -273,6 +278,7 @@
     <footer class="site-footer">
         <div class="container-wide">
             <div class="footer-links">
+                <a href="/about.html">About &amp; Editorial Policy</a>
                 <a href="https://thrive.md">thrive.md</a>
                 <a href="https://anxiety.md">anxiety.md</a>
                 <a href="https://depression.md">depression.md</a>

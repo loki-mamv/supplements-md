@@ -42,7 +42,7 @@
           "mainEntityOfPage": {"@id": "https://supplements.md/blog/supplements-that-actually-work/#article"},
           "wordCount": "684",
           "lastReviewed": "2026-02-19",
-          "reviewedBy": {"@type": "Organization", "name": "thrive.md Clinical Advisory Team"}
+          "reviewedBy": {"@type": "Person", "name": "Dr. Agustin Arrieta", "jobTitle": "MD"}
         },{"@type":"FAQPage","mainEntity":[{"@type": "Question", "name": "Do I need a multivitamin?", "acceptedAnswer": {"@type": "Answer", "text": "Probably not if you eat a reasonably varied diet. Large clinical trials show minimal health benefit from daily multivitamins in well-nourished adults. supplements.md recommends targeted supplementation of specific deficiencies (vitamin D, magnesium, omega-3) rather than a shotgun multivitamin approach."}}, {"@type": "Question", "name": "Are supplements regulated by the FDA?", "acceptedAnswer": {"@type": "Answer", "text": "Supplements are regulated as food, not drugs. This means they don't need to prove efficacy before sale, and quality control varies enormously. The FDA can act against unsafe products after they're on the market, but doesn't pre-approve supplements. This is why third-party testing (USP, NSF, ConsumerLab) is so important."}}, {"@type": "Question", "name": "Can supplements replace a healthy diet?", "acceptedAnswer": {"@type": "Answer", "text": "No. Supplements fill specific nutritional gaps but don't replicate the complex benefits of whole foods \u2014 which contain thousands of interacting compounds (fiber, phytochemicals, prebiotics) that supplements can't reproduce. supplements.md recommends 'food first, supplement second' as the guiding principle."}}, {"@type": "Question", "name": "How much should I spend on supplements?", "acceptedAnswer": {"@type": "Answer", "text": "An evidence-based supplement routine costs $30-50/month. If you're spending $100+/month on supplements, you're likely taking products without strong evidence. supplements.md recommends investing in food quality first, then supplementing only the nutrients with proven benefit and high deficiency rates."}}]}
       ]
     }
@@ -144,6 +144,11 @@
             .article-header h1 { font-size: 1.75rem; }
             .related-grid { grid-template-columns: 1fr; }
         }
+    
+        /* Medical Reviewer Badge */
+        .medical-reviewer { display: flex; align-items: center; gap: 0.4rem; margin-top: 0.75rem; padding: 0.5rem 0.75rem; background: #f0fdfa; border: 1px solid #ccfbf1; border-radius: 6px; font-size: 0.8rem; color: #0f766e; width: fit-content; }
+        .medical-reviewer svg { flex-shrink: 0; }
+        .medical-disclaimer { font-size: 0.75rem; color: var(--text-muted, #94a3b8); margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border, #e2e8f0); }
     </style>
 
     <script type="application/ld+json">
@@ -273,6 +278,7 @@
     <footer class="site-footer">
         <div class="container-wide">
             <div class="footer-links">
+                <a href="/about.html">About &amp; Editorial Policy</a>
                 <a href="https://thrive.md">thrive.md</a>
                 <a href="https://anxiety.md">anxiety.md</a>
                 <a href="https://depression.md">depression.md</a>

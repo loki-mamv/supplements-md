@@ -42,7 +42,7 @@
           "mainEntityOfPage": {"@id": "https://supplements.md/blog/vitamin-d-deficiency-signs-testing/#article"},
           "wordCount": "765",
           "lastReviewed": "2026-02-14",
-          "reviewedBy": {"@type": "Organization", "name": "thrive.md Clinical Advisory Team"}
+          "reviewedBy": {"@type": "Person", "name": "Dr. Agustin Arrieta", "jobTitle": "MD"}
         },{"@type":"FAQPage","mainEntity":[{"@type": "Question", "name": "Should everyone take vitamin D supplements?", "acceptedAnswer": {"@type": "Answer", "text": "Not necessarily, but most adults in northern climates benefit from 1,000-2,000 IU daily, especially during winter. If you spend significant time outdoors with skin exposed and live in a sunny climate, you may produce enough naturally. Testing is the best way to determine your individual need."}}, {"@type": "Question", "name": "Can vitamin D help prevent COVID-19?", "acceptedAnswer": {"@type": "Answer", "text": "Observational studies consistently show that vitamin D deficiency is associated with worse COVID-19 outcomes. However, randomized trials of supplementation for COVID prevention or treatment have produced mixed results. Maintaining sufficient vitamin D supports immune function generally, but it's not a substitute for vaccination."}}, {"@type": "Question", "name": "How long does it take to correct a vitamin D deficiency?", "acceptedAnswer": {"@type": "Answer", "text": "With appropriate supplementation, most people reach sufficient levels within 2-3 months. Severe deficiency may take longer. Recheck your levels 3 months after starting supplementation to confirm adequacy and adjust dosing."}}]}
       ]
     }
@@ -144,6 +144,11 @@
             .article-header h1 { font-size: 1.75rem; }
             .related-grid { grid-template-columns: 1fr; }
         }
+    
+        /* Medical Reviewer Badge */
+        .medical-reviewer { display: flex; align-items: center; gap: 0.4rem; margin-top: 0.75rem; padding: 0.5rem 0.75rem; background: #f0fdfa; border: 1px solid #ccfbf1; border-radius: 6px; font-size: 0.8rem; color: #0f766e; width: fit-content; }
+        .medical-reviewer svg { flex-shrink: 0; }
+        .medical-disclaimer { font-size: 0.75rem; color: var(--text-muted, #94a3b8); margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border, #e2e8f0); }
     </style>
 
     <script type="application/ld+json">
@@ -338,6 +343,7 @@
     <footer class="site-footer">
         <div class="container-wide">
             <div class="footer-links">
+                <a href="/about.html">About &amp; Editorial Policy</a>
                 <a href="https://thrive.md">thrive.md</a>
                 <a href="https://anxiety.md">anxiety.md</a>
                 <a href="https://depression.md">depression.md</a>
