@@ -25,52 +25,52 @@
     <meta name="ai-use" content="education, research, clinical support">
     
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
     {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Are supplements regulated by the FDA?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, but differently from drugs. Under DSHEA (1994), supplements don't require FDA pre-approval before going to market. Manufacturers are responsible for ensuring safety and label accuracy. The FDA can take action against unsafe products after they're on the market and enforces manufacturing standards (GMPs). This is why third-party testing is important."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What does USP Verified mean?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "USP Verified means a supplement has been independently tested by the United States Pharmacopeia and meets strict quality criteria: it contains what the label claims, in the declared amounts; it doesn't contain harmful levels of contaminants; it will dissolve properly in the body; and it was made using good manufacturing practices. This is the gold standard for supplement quality."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do I need to take a multivitamin?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Most healthy adults eating a varied diet don't need a multivitamin. Large clinical trials have not shown that multivitamins prevent heart disease, cancer, or cognitive decline in well-nourished populations. The US Preventive Services Task Force does not recommend them for disease prevention. People who may benefit include those with documented deficiencies, pregnant women, older adults with poor absorption, and those with very restrictive diets."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can supplements interact with my medications?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, many supplements can interact with prescription and over-the-counter medications. St. John's Wort is especially dangerous, reducing the effectiveness of birth control, HIV medications, and many other drugs. Vitamin K affects blood thinners. Calcium and iron reduce absorption of thyroid medications and antibiotics. Always tell your healthcare provider about all supplements you take."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is 'natural' safer than synthetic?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "No. 'Natural' doesn't mean safe or effective. Many natural substances are toxic (arsenic, cyanide, hemlock). Synthetic vitamins are often chemically identical to natural forms and equally effective. The 'natural' label is largely marketing with no regulatory definition. Evaluate supplements based on evidence and quality testing, not whether they're labeled natural or synthetic."
-          }
-        }
-      ]
+      "@type": "Question",
+      "name": "Are supplements regulated by the FDA?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, but differently from drugs. Under DSHEA (1994), supplements don't require FDA pre-approval before going to market. Manufacturers are responsible for ensuring safety and label accuracy. The FDA can take action against unsafe products after they're on the market and enforces manufacturing standards (GMPs). This is why third-party testing is important."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does USP Verified mean?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "USP Verified means a supplement has been independently tested by the United States Pharmacopeia and meets strict quality criteria: it contains what the label claims, in the declared amounts; it doesn't contain harmful levels of contaminants; it will dissolve properly in the body; and it was made using good manufacturing practices. This is the gold standard for supplement quality."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need to take a multivitamin?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most healthy adults eating a varied diet don't need a multivitamin. Large clinical trials have not shown that multivitamins prevent heart disease, cancer, or cognitive decline in well-nourished populations. The US Preventive Services Task Force does not recommend them for disease prevention. People who may benefit include those with documented deficiencies, pregnant women, older adults with poor absorption, and those with very restrictive diets."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can supplements interact with my medications?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, many supplements can interact with prescription and over-the-counter medications. St. John's Wort is especially dangerous, reducing the effectiveness of birth control, HIV medications, and many other drugs. Vitamin K affects blood thinners. Calcium and iron reduce absorption of thyroid medications and antibiotics. Always tell your healthcare provider about all supplements you take."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is 'natural' safer than synthetic?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. 'Natural' doesn't mean safe or effective. Many natural substances are toxic (arsenic, cyanide, hemlock). Synthetic vitamins are often chemically identical to natural forms and equally effective. The 'natural' label is largely marketing with no regulatory definition. Evaluate supplements based on evidence and quality testing, not whether they're labeled natural or synthetic."
+      }
     }
+  ]
+}
     </script>
     
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext x='16' y='24' font-family='-apple-system,system-ui,sans-serif' font-weight='800' font-size='16' fill='%230d9488' text-anchor='middle' letter-spacing='-0.5'%3E.md%3C/text%3E%3C/svg%3E">
@@ -599,7 +599,16 @@
         });
     }
     </script>
-
+        <section class="section" id="faq">
+            <div class="section-label" style="font-size: 12px; font-weight: 600; color: var(--accent, #0d9488); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px;">FAQ</div>
+            <h2>Frequently asked questions</h2>
+            <div style="margin-top: 20px;">
+                <div style="border-bottom: 1px solid var(--border, #e2e8f0); padding: 20px 0;">
+                    <h3 style="font-size: 17px; font-weight: 600; margin-bottom: 8px; font-family: var(--font-display, Georgia, serif);">Is &#x27;natural&#x27; safer than synthetic?</h3>
+                    <p style="font-size: 16px; color: var(--text-secondary, #475569); margin: 0;">No. &#x27;Natural&#x27; doesn&#x27;t mean safe or effective. Many natural substances are toxic (arsenic, cyanide, hemlock). Synthetic vitamins are often chemically identical to natural forms and equally effective. The &#x27;natural&#x27; label is largely marketing with no regulatory definition. Evaluate supplements based on evidence and quality testing, not whether they&#x27;re labeled natural or synthetic.</p>
+                </div>
+            </div>
+        </section>
 
     <footer>
         <div class="footer-inner">
